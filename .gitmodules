@@ -1,6 +1,3 @@
-[submodule "aixsuture"]
-	path = aixsuture
-	url = https://gitlab.com/nct_tso_public/aixsuture.git
 [submodule "sam3"]
 	path = sam3
-	url = https://github.com/facebookresearch/sam3.git
+	url = https://github.com/htaken/sam3.git
