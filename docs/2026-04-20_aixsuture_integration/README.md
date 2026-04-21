@@ -88,6 +88,7 @@ skin, tissue, practice pad
 | `README.md` | 全体インデックス、確定事項、実行コマンド |
 | `phase1_results.md` | Phase 1 の raw 実験結果(プロンプト別集計、動画横断性、定性評価) |
 | `data_capability_matrix.md` | CSV 多角分析による「取れる / 取れない」の判断材料と Phase 2 設計への示唆 |
+| `phase2_plan.md` | **Phase 2 実行計画(Codex レビュー反映版)**。OOM 定量予測、独立 session 分解、stress-case 設計、モニタ運用ルール |
 
 ## 実行コマンド
 
