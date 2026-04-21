@@ -1,0 +1,17 @@
+2026-04-20 15:49:41,098 INFO probe_image | SMOKE MODE: frames=['../tmp/aixsuture/probe_frames/A31H_t5.jpg'] prompts=['hand']
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+2026-04-20 15:49:41,710 INFO probe_image | before build_sam3_image_model | cuda allocated=0.00 GiB reserved=0.00 GiB
+2026-04-20 15:49:45,947 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-20 15:49:46,178 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3/resolve/main/sam3.pt "HTTP/1.1 302 Found"
+2026-04-20 15:49:47,806 INFO probe_image | model built in 6.10s
+2026-04-20 15:49:47,806 INFO probe_image | after build_sam3_image_model | cuda allocated=3.33 GiB reserved=3.43 GiB
+2026-04-20 15:49:47,806 INFO probe_image | after Sam3Processor | cuda allocated=3.33 GiB reserved=3.43 GiB
+2026-04-20 15:49:47,812 INFO probe_image | before set_image frame=0 | cuda allocated=3.33 GiB reserved=3.43 GiB
+2026-04-20 15:49:48,209 INFO probe_image | set_image frame=0 elapsed=0.40s
+2026-04-20 15:49:48,209 INFO probe_image | after set_image frame=0 | cuda allocated=3.44 GiB reserved=3.81 GiB
+2026-04-20 15:49:48,565 INFO probe_image | video=A31H tag=t5 prompt='hand' n=2 max=0.973 area=0.1770 elapsed=0.16s
+2026-04-20 15:49:48,566 INFO probe_image | wrote ../tmp/aixsuture/probe_results/smoke.csv
+2026-04-20 15:49:48,566 INFO probe_image | end | cuda allocated=3.46 GiB reserved=4.13 GiB

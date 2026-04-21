@@ -1,0 +1,33 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 16:06:59,781 50470 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 16:07:00,095 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 16:07:00,277 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 16:07:01,927 INFO sam3p1_phase3 | predictor built in 7.40s
+2026-04-17 16:07:01,927 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/30 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 16:07:01,952 50470 sam3_base_predictor.py: 130:[0m started new session 1b695fb6-850c-4ce5-ad7b-4ae727b7202b
+2026-04-17 16:07:01,952 INFO sam3p1_phase3 | session_id=1b695fb6-850c-4ce5-ad7b-4ae727b7202b
+[0m[32mINFO 2026-04-17 16:07:01,952 50470 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:  27%|██▋       | 8/30 [00:00<00:00, 75.04it/s]frame loading (image folder) [rank=0]:  53%|█████▎    | 16/30 [00:00<00:00, 27.20it/s]frame loading (image folder) [rank=0]:  80%|████████  | 24/30 [00:00<00:00, 23.62it/s]frame loading (image folder) [rank=0]:  93%|█████████▎| 28/30 [00:01<00:00, 25.63it/s]frame loading (image folder) [rank=0]: 100%|██████████| 30/30 [00:01<00:00, 28.33it/s]
+2026-04-17 16:07:03,034 INFO sam3p1_phase3 | add_prompt text='shoe' in 1.08s
+2026-04-17 16:07:03,034 INFO sam3p1_phase3 | initial obj_ids=[0, 1, 2, 3]
+2026-04-17 16:07:03,034 INFO sam3p1_phase3 | before propagate | allocated=4.34 GiB reserved=5.23 GiB
+[0m[32mINFO 2026-04-17 16:07:03,034 50470 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=False).
+propagate_in_video:   0%|          | 0/30 [00:00<?, ?it/s]propagate_in_video:   3%|▎         | 1/30 [00:00<00:13,  2.23it/s]propagate_in_video:   7%|▋         | 2/30 [00:00<00:12,  2.28it/s]propagate_in_video:  10%|█         | 3/30 [00:01<00:11,  2.29it/s]propagate_in_video:  13%|█▎        | 4/30 [00:01<00:11,  2.28it/s]propagate_in_video:  17%|█▋        | 5/30 [00:02<00:11,  2.27it/s]2026-04-17 16:07:05,689 INFO sam3.model.multiplex_utils | Filled 1 slots and created 0 new buckets
+2026-04-17 16:07:05,689 INFO sam3.model.multiplex_utils | self.num_buckets=1, self.total_valid_entries=5, self.total_non_padding_entries=5
+propagate_in_video:  20%|██        | 6/30 [00:02<00:10,  2.20it/s]propagate_in_video:  23%|██▎       | 7/30 [00:03<00:10,  2.19it/s]propagate_in_video:  27%|██▋       | 8/30 [00:03<00:10,  2.18it/s]propagate_in_video:  30%|███       | 9/30 [00:04<00:09,  2.17it/s]propagate_in_video:  33%|███▎      | 10/30 [00:04<00:09,  2.16it/s]propagate_in_video:  37%|███▋      | 11/30 [00:05<00:08,  2.16it/s]2026-04-17 16:07:08,502 INFO sam3.model.multiplex_utils | Filled 1 slots and created 0 new buckets
+2026-04-17 16:07:08,502 INFO sam3.model.multiplex_utils | self.num_buckets=1, self.total_valid_entries=6, self.total_non_padding_entries=6
+propagate_in_video:  40%|████      | 12/30 [00:05<00:08,  2.12it/s]propagate_in_video:  43%|████▎     | 13/30 [00:05<00:07,  2.13it/s]propagate_in_video:  47%|████▋     | 14/30 [00:06<00:07,  2.14it/s]propagate_in_video:  50%|█████     | 15/30 [00:06<00:06,  2.15it/s]propagate_in_video:  53%|█████▎    | 16/30 [00:07<00:06,  2.15it/s]propagate_in_video:  57%|█████▋    | 17/30 [00:07<00:06,  2.15it/s]propagate_in_video:  60%|██████    | 18/30 [00:08<00:05,  2.15it/s]propagate_in_video:  63%|██████▎   | 19/30 [00:08<00:05,  2.15it/s]propagate_in_video:  67%|██████▋   | 20/30 [00:09<00:04,  2.15it/s]propagate_in_video:  70%|███████   | 21/30 [00:09<00:04,  2.16it/s]propagate_in_video:  73%|███████▎  | 22/30 [00:10<00:03,  2.16it/s]propagate_in_video:  77%|███████▋  | 23/30 [00:10<00:03,  2.16it/s]propagate_in_video:  80%|████████  | 24/30 [00:11<00:02,  2.16it/s]propagate_in_video:  83%|████████▎ | 25/30 [00:11<00:02,  2.16it/s]propagate_in_video:  87%|████████▋ | 26/30 [00:11<00:01,  2.16it/s]propagate_in_video:  90%|█████████ | 27/30 [00:12<00:01,  2.16it/s]propagate_in_video:  93%|█████████▎| 28/30 [00:12<00:00,  2.16it/s]propagate_in_video:  97%|█████████▋| 29/30 [00:13<00:00,  2.16it/s]propagate_in_video: 100%|██████████| 30/30 [00:13<00:00,  2.04it/s]propagate_in_video: 100%|██████████| 30/30 [00:13<00:00,  2.15it/s]
+[0m[32mINFO 2026-04-17 16:07:16,991 50470 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 37.50%, subscription rate: 600.00%
+[0m[32mINFO 2026-04-17 16:07:16,991 50470 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=True).
+propagate_in_video: 0it [00:00, ?it/s]propagate_in_video: 0it [00:00, ?it/s]
+[0m[32mINFO 2026-04-17 16:07:16,991 50470 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 37.50%, subscription rate: 600.00%
+[0m[32mINFO 2026-04-17 16:07:16,991 50470 sam3_base_predictor.py: 286:[0m propagation ended in session 1b695fb6-850c-4ce5-ad7b-4ae727b7202b
+2026-04-17 16:07:16,992 INFO sam3p1_phase3 | after propagate | allocated=5.11 GiB reserved=6.07 GiB
+2026-04-17 16:07:16,997 INFO sam3p1_phase3 | propagate: 30 frames in 13.96s (2.15 fps), seen_ids=[0, 1, 2, 3, 4, 5], nonempty_masks=137
+[0m[32mINFO 2026-04-17 16:07:17,059 50470 sam3_base_predictor.py: 305:[0m removed session 1b695fb6-850c-4ce5-ad7b-4ae727b7202b
+2026-04-17 16:07:17,059 INFO sam3p1_phase3 | close_session ok
+2026-04-17 16:07:17,059 INFO sam3p1_phase3 | Phase 3 propagation test PASSED

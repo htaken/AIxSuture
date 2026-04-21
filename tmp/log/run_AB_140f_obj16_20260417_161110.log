@@ -1,0 +1,254 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 16:11:17,418 53571 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 16:11:17,735 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 16:11:17,913 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 16:11:19,535 INFO sam3p1_phase3 | predictor built in 7.46s
+2026-04-17 16:11:19,535 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/140 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 16:11:19,563 53571 sam3_base_predictor.py: 130:[0m started new session 84006384-12b1-4944-9e72-18d3a380e2f6
+2026-04-17 16:11:19,563 INFO sam3p1_phase3 | session_id=84006384-12b1-4944-9e72-18d3a380e2f6
+[0m[32mINFO 2026-04-17 16:11:19,563 53571 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:   6%|▌         | 8/140 [00:00<00:01, 75.68it/s]frame loading (image folder) [rank=0]:  11%|█▏        | 16/140 [00:00<00:04, 27.10it/s]frame loading (image folder) [rank=0]:  18%|█▊        | 25/140 [00:00<00:04, 26.23it/s]frame loading (image folder) [rank=0]:  21%|██        | 29/140 [00:01<00:04, 26.29it/s][0m[33mWARNING 2026-04-17 16:11:20,593 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=27 and prev_obj_num=0
+2026-04-17 16:11:20,679 INFO sam3p1_phase3 | add_prompt text='window' in 1.12s
+2026-04-17 16:11:20,679 INFO sam3p1_phase3 | initial obj_ids=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2026-04-17 16:11:20,679 INFO sam3p1_phase3 | before propagate | allocated=4.40 GiB reserved=5.69 GiB
+[0m[32mINFO 2026-04-17 16:11:20,679 53571 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=False).
+
+propagate_in_video:   0%|          | 0/140 [00:00<?, ?it/s][Aframe loading (image folder) [rank=0]:  26%|██▋       | 37/140 [00:01<00:04, 22.25it/s][0m[33mWARNING 2026-04-17 16:11:21,119 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:   1%|          | 1/140 [00:00<01:01,  2.27it/s][Aframe loading (image folder) [rank=0]:  31%|███       | 43/140 [00:01<00:05, 18.91it/s]frame loading (image folder) [rank=0]:  35%|███▌      | 49/140 [00:02<00:03, 23.20it/s][0m[33mWARNING 2026-04-17 16:11:21,580 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:   1%|▏         | 2/140 [00:00<01:02,  2.21it/s][Aframe loading (image folder) [rank=0]:  38%|███▊      | 53/140 [00:02<00:04, 18.54it/s][0m[33mWARNING 2026-04-17 16:11:22,032 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+
+propagate_in_video:   2%|▏         | 3/140 [00:01<01:01,  2.21it/s][Aframe loading (image folder) [rank=0]:  40%|████      | 56/140 [00:02<00:05, 14.16it/s]frame loading (image folder) [rank=0]:  43%|████▎     | 60/140 [00:02<00:04, 16.92it/s][0m[33mWARNING 2026-04-17 16:11:22,489 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+
+propagate_in_video:   3%|▎         | 4/140 [00:01<01:01,  2.20it/s][Aframe loading (image folder) [rank=0]:  45%|████▌     | 63/140 [00:03<00:05, 13.91it/s]frame loading (image folder) [rank=0]:  49%|████▉     | 69/140 [00:03<00:03, 18.92it/s][0m[33mWARNING 2026-04-17 16:11:22,966 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=13 and prev_obj_num=16
+
+propagate_in_video:   4%|▎         | 5/140 [00:02<01:02,  2.16it/s][Aframe loading (image folder) [rank=0]:  51%|█████▏    | 72/140 [00:03<00:04, 14.83it/s]frame loading (image folder) [rank=0]:  54%|█████▎    | 75/140 [00:03<00:03, 16.59it/s][0m[33mWARNING 2026-04-17 16:11:23,439 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:   4%|▍         | 6/140 [00:02<01:02,  2.15it/s][Aframe loading (image folder) [rank=0]:  56%|█████▌    | 78/140 [00:04<00:04, 13.32it/s]frame loading (image folder) [rank=0]:  58%|█████▊    | 81/140 [00:04<00:03, 15.26it/s][0m[33mWARNING 2026-04-17 16:11:23,912 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=13 and prev_obj_num=16
+
+propagate_in_video:   5%|▌         | 7/140 [00:03<01:02,  2.14it/s][Aframe loading (image folder) [rank=0]:  60%|██████    | 84/140 [00:04<00:04, 12.48it/s]frame loading (image folder) [rank=0]:  62%|██████▏   | 87/140 [00:04<00:03, 14.42it/s][0m[33mWARNING 2026-04-17 16:11:24,393 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:   6%|▌         | 8/140 [00:03<01:02,  2.12it/s][Aframe loading (image folder) [rank=0]:  64%|██████▎   | 89/140 [00:05<00:04, 10.83it/s]frame loading (image folder) [rank=0]:  66%|██████▌   | 92/140 [00:05<00:03, 13.07it/s][0m[33mWARNING 2026-04-17 16:11:24,873 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:   6%|▋         | 9/140 [00:04<01:02,  2.11it/s][Aframe loading (image folder) [rank=0]:  67%|██████▋   | 94/140 [00:05<00:04, 10.26it/s]frame loading (image folder) [rank=0]:  70%|███████   | 98/140 [00:05<00:03, 13.80it/s]
+propagate_in_video:   7%|▋         | 10/140 [00:04<01:02,  2.09it/s][Aframe loading (image folder) [rank=0]:  71%|███████▏  | 100/140 [00:06<00:03, 10.58it/s]frame loading (image folder) [rank=0]:  74%|███████▍  | 104/140 [00:06<00:02, 13.91it/s]
+propagate_in_video:   8%|▊         | 11/140 [00:05<01:01,  2.09it/s][Aframe loading (image folder) [rank=0]:  76%|███████▌  | 106/140 [00:06<00:03, 10.57it/s]frame loading (image folder) [rank=0]:  78%|███████▊  | 109/140 [00:06<00:02, 13.06it/s][0m[33mWARNING 2026-04-17 16:11:26,316 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+
+propagate_in_video:   9%|▊         | 12/140 [00:05<01:01,  2.09it/s][Aframe loading (image folder) [rank=0]:  79%|███████▉  | 111/140 [00:07<00:02, 10.10it/s]frame loading (image folder) [rank=0]:  82%|████████▏ | 115/140 [00:07<00:01, 13.57it/s][0m[33mWARNING 2026-04-17 16:11:26,793 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=4 and prev_obj_num=16
+
+propagate_in_video:   9%|▉         | 13/140 [00:06<01:00,  2.09it/s][Aframe loading (image folder) [rank=0]:  84%|████████▎ | 117/140 [00:07<00:02, 10.53it/s]frame loading (image folder) [rank=0]:  86%|████████▋ | 121/140 [00:07<00:01, 13.89it/s][0m[33mWARNING 2026-04-17 16:11:27,272 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  10%|█         | 14/140 [00:06<01:00,  2.09it/s][Aframe loading (image folder) [rank=0]:  88%|████████▊ | 123/140 [00:08<00:01, 10.55it/s]frame loading (image folder) [rank=0]:  90%|█████████ | 126/140 [00:08<00:01, 13.02it/s]
+propagate_in_video:  11%|█         | 15/140 [00:07<00:59,  2.09it/s][Aframe loading (image folder) [rank=0]:  91%|█████████▏| 128/140 [00:08<00:01, 10.10it/s]frame loading (image folder) [rank=0]:  94%|█████████▍| 132/140 [00:08<00:00, 13.76it/s][0m[33mWARNING 2026-04-17 16:11:28,231 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  11%|█▏        | 16/140 [00:07<00:59,  2.09it/s][Aframe loading (image folder) [rank=0]:  96%|█████████▌| 134/140 [00:08<00:00, 11.00it/s]frame loading (image folder) [rank=0]:  99%|█████████▉| 139/140 [00:09<00:00, 15.52it/s]frame loading (image folder) [rank=0]: 100%|██████████| 140/140 [00:09<00:00, 15.28it/s]
+
+propagate_in_video:  12%|█▏        | 17/140 [00:08<00:58,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:11:29,183 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=15 and prev_obj_num=16
+
+propagate_in_video:  13%|█▎        | 18/140 [00:08<00:58,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:29,656 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=3 and prev_obj_num=16
+
+propagate_in_video:  14%|█▎        | 19/140 [00:08<00:57,  2.10it/s][A
+propagate_in_video:  14%|█▍        | 20/140 [00:09<00:56,  2.11it/s][A
+propagate_in_video:  15%|█▌        | 21/140 [00:09<00:56,  2.11it/s][A
+propagate_in_video:  16%|█▌        | 22/140 [00:10<00:55,  2.11it/s][A
+propagate_in_video:  16%|█▋        | 23/140 [00:10<00:55,  2.11it/s][A
+propagate_in_video:  17%|█▋        | 24/140 [00:11<00:54,  2.12it/s][A[0m[33mWARNING 2026-04-17 16:11:32,488 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  18%|█▊        | 25/140 [00:11<00:54,  2.12it/s][A[0m[33mWARNING 2026-04-17 16:11:32,960 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  19%|█▊        | 26/140 [00:12<00:53,  2.12it/s][A
+propagate_in_video:  19%|█▉        | 27/140 [00:12<00:53,  2.12it/s][A
+propagate_in_video:  20%|██        | 28/140 [00:13<00:52,  2.12it/s][A
+propagate_in_video:  21%|██        | 29/140 [00:13<00:52,  2.12it/s][A
+propagate_in_video:  21%|██▏       | 30/140 [00:14<00:57,  1.92it/s][A[0m[33mWARNING 2026-04-17 16:11:35,497 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  22%|██▏       | 31/140 [00:14<00:55,  1.96it/s][A
+propagate_in_video:  23%|██▎       | 32/140 [00:15<00:53,  2.00it/s][A
+propagate_in_video:  24%|██▎       | 33/140 [00:15<00:52,  2.03it/s][A
+propagate_in_video:  24%|██▍       | 34/140 [00:16<00:51,  2.06it/s][A
+propagate_in_video:  25%|██▌       | 35/140 [00:16<00:50,  2.07it/s][A
+propagate_in_video:  26%|██▌       | 36/140 [00:17<00:49,  2.08it/s][A
+propagate_in_video:  26%|██▋       | 37/140 [00:17<00:49,  2.09it/s][A
+propagate_in_video:  27%|██▋       | 38/140 [00:18<00:48,  2.10it/s][A
+propagate_in_video:  28%|██▊       | 39/140 [00:18<00:48,  2.10it/s][A
+propagate_in_video:  29%|██▊       | 40/140 [00:19<00:47,  2.10it/s][A
+propagate_in_video:  29%|██▉       | 41/140 [00:19<00:47,  2.11it/s][A
+propagate_in_video:  30%|███       | 42/140 [00:20<00:46,  2.11it/s][A
+propagate_in_video:  31%|███       | 43/140 [00:20<00:46,  2.11it/s][A
+propagate_in_video:  31%|███▏      | 44/140 [00:20<00:45,  2.11it/s][A
+propagate_in_video:  32%|███▏      | 45/140 [00:21<00:45,  2.11it/s][A
+propagate_in_video:  33%|███▎      | 46/140 [00:22<00:47,  1.97it/s][A
+propagate_in_video:  34%|███▎      | 47/140 [00:22<00:46,  2.01it/s][A
+propagate_in_video:  34%|███▍      | 48/140 [00:22<00:45,  2.04it/s][A
+propagate_in_video:  35%|███▌      | 49/140 [00:23<00:44,  2.06it/s][A
+propagate_in_video:  36%|███▌      | 50/140 [00:23<00:43,  2.07it/s][A
+propagate_in_video:  36%|███▋      | 51/140 [00:24<00:42,  2.08it/s][A
+propagate_in_video:  37%|███▋      | 52/140 [00:24<00:42,  2.09it/s][A
+propagate_in_video:  38%|███▊      | 53/140 [00:25<00:41,  2.10it/s][A
+propagate_in_video:  39%|███▊      | 54/140 [00:25<00:40,  2.10it/s][A
+propagate_in_video:  39%|███▉      | 55/140 [00:26<00:40,  2.10it/s][A
+propagate_in_video:  40%|████      | 56/140 [00:26<00:39,  2.11it/s][A
+propagate_in_video:  41%|████      | 57/140 [00:27<00:39,  2.11it/s][A
+propagate_in_video:  41%|████▏     | 58/140 [00:27<00:38,  2.11it/s][A
+propagate_in_video:  42%|████▏     | 59/140 [00:28<00:38,  2.11it/s][A
+propagate_in_video:  43%|████▎     | 60/140 [00:28<00:37,  2.11it/s][A
+propagate_in_video:  44%|████▎     | 61/140 [00:29<00:37,  2.11it/s][A
+propagate_in_video:  44%|████▍     | 62/140 [00:29<00:39,  1.97it/s][A
+propagate_in_video:  45%|████▌     | 63/140 [00:30<00:38,  2.01it/s][A
+propagate_in_video:  46%|████▌     | 64/140 [00:30<00:37,  2.04it/s][A
+propagate_in_video:  46%|████▋     | 65/140 [00:31<00:36,  2.06it/s][A[0m[33mWARNING 2026-04-17 16:11:52,309 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  47%|████▋     | 66/140 [00:31<00:35,  2.07it/s][A
+propagate_in_video:  48%|████▊     | 67/140 [00:32<00:35,  2.08it/s][A
+propagate_in_video:  49%|████▊     | 68/140 [00:32<00:34,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:11:53,731 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  49%|████▉     | 69/140 [00:33<00:33,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:54,205 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  50%|█████     | 70/140 [00:33<00:33,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:54,680 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  51%|█████     | 71/140 [00:34<00:32,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:55,156 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=5 and prev_obj_num=16
+
+propagate_in_video:  51%|█████▏    | 72/140 [00:34<00:32,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:55,631 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  52%|█████▏    | 73/140 [00:34<00:31,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:56,107 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=5 and prev_obj_num=16
+
+propagate_in_video:  53%|█████▎    | 74/140 [00:35<00:31,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:56,582 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  54%|█████▎    | 75/140 [00:35<00:30,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:57,058 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  54%|█████▍    | 76/140 [00:36<00:30,  2.10it/s][A
+propagate_in_video:  55%|█████▌    | 77/140 [00:36<00:29,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:11:58,008 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=2 and prev_obj_num=16
+
+propagate_in_video:  56%|█████▌    | 78/140 [00:37<00:31,  1.97it/s][A[0m[33mWARNING 2026-04-17 16:11:58,594 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=3 and prev_obj_num=16
+
+propagate_in_video:  56%|█████▋    | 79/140 [00:37<00:30,  2.00it/s][A[0m[33mWARNING 2026-04-17 16:11:59,069 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=3 and prev_obj_num=16
+
+propagate_in_video:  57%|█████▋    | 80/140 [00:38<00:29,  2.03it/s][A[0m[33mWARNING 2026-04-17 16:11:59,545 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  58%|█████▊    | 81/140 [00:38<00:28,  2.05it/s][A[0m[33mWARNING 2026-04-17 16:12:00,021 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  59%|█████▊    | 82/140 [00:39<00:28,  2.07it/s][A
+propagate_in_video:  59%|█████▉    | 83/140 [00:39<00:27,  2.08it/s][A[0m[33mWARNING 2026-04-17 16:12:00,971 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=3 and prev_obj_num=16
+
+propagate_in_video:  60%|██████    | 84/140 [00:40<00:26,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:01,447 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=4 and prev_obj_num=16
+
+propagate_in_video:  61%|██████    | 85/140 [00:40<00:26,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:01,923 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=2 and prev_obj_num=16
+
+propagate_in_video:  61%|██████▏   | 86/140 [00:41<00:25,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:02,398 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  62%|██████▏   | 87/140 [00:41<00:25,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:02,873 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  63%|██████▎   | 88/140 [00:42<00:24,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:03,348 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=13 and prev_obj_num=16
+
+propagate_in_video:  64%|██████▎   | 89/140 [00:42<00:24,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:03,824 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  64%|██████▍   | 90/140 [00:43<00:23,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:04,299 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  65%|██████▌   | 91/140 [00:43<00:23,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:04,775 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=2 and prev_obj_num=16
+
+propagate_in_video:  66%|██████▌   | 92/140 [00:44<00:22,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:05,251 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  66%|██████▋   | 93/140 [00:44<00:22,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:05,726 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=11 and prev_obj_num=16
+
+propagate_in_video:  67%|██████▋   | 94/140 [00:45<00:23,  1.96it/s][A[0m[33mWARNING 2026-04-17 16:12:06,316 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  68%|██████▊   | 95/140 [00:45<00:22,  2.00it/s][A[0m[33mWARNING 2026-04-17 16:12:06,791 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  69%|██████▊   | 96/140 [00:46<00:21,  2.03it/s][A[0m[33mWARNING 2026-04-17 16:12:07,267 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=5 and prev_obj_num=16
+
+propagate_in_video:  69%|██████▉   | 97/140 [00:46<00:20,  2.05it/s][A[0m[33mWARNING 2026-04-17 16:12:07,742 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  70%|███████   | 98/140 [00:47<00:20,  2.07it/s][A
+propagate_in_video:  71%|███████   | 99/140 [00:47<00:19,  2.08it/s][A[0m[33mWARNING 2026-04-17 16:12:08,693 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  71%|███████▏  | 100/140 [00:48<00:19,  2.08it/s][A[0m[33mWARNING 2026-04-17 16:12:09,169 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+
+propagate_in_video:  72%|███████▏  | 101/140 [00:48<00:18,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:09,644 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+
+propagate_in_video:  73%|███████▎  | 102/140 [00:48<00:18,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:10,120 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  74%|███████▎  | 103/140 [00:49<00:17,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:10,596 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  74%|███████▍  | 104/140 [00:49<00:17,  2.10it/s][A
+propagate_in_video:  75%|███████▌  | 105/140 [00:50<00:16,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:11,546 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=2 and prev_obj_num=16
+
+propagate_in_video:  76%|███████▌  | 106/140 [00:50<00:16,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:12,021 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  76%|███████▋  | 107/140 [00:51<00:15,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:12,497 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  77%|███████▋  | 108/140 [00:51<00:15,  2.10it/s][A
+propagate_in_video:  78%|███████▊  | 109/140 [00:52<00:14,  2.10it/s][A
+propagate_in_video:  79%|███████▊  | 110/140 [00:52<00:15,  1.97it/s][A
+propagate_in_video:  79%|███████▉  | 111/140 [00:53<00:14,  2.00it/s][A[0m[33mWARNING 2026-04-17 16:12:14,511 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=4 and prev_obj_num=16
+
+propagate_in_video:  80%|████████  | 112/140 [00:53<00:13,  2.03it/s][A
+propagate_in_video:  81%|████████  | 113/140 [00:54<00:13,  2.05it/s][A[0m[33mWARNING 2026-04-17 16:12:15,462 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  81%|████████▏ | 114/140 [00:54<00:12,  2.07it/s][A[0m[33mWARNING 2026-04-17 16:12:15,937 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  82%|████████▏ | 115/140 [00:55<00:12,  2.08it/s][A[0m[33mWARNING 2026-04-17 16:12:16,413 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  83%|████████▎ | 116/140 [00:55<00:11,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:16,888 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+
+propagate_in_video:  84%|████████▎ | 117/140 [00:56<00:10,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:17,364 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  84%|████████▍ | 118/140 [00:56<00:10,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:17,839 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  85%|████████▌ | 119/140 [00:57<00:10,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:18,315 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  86%|████████▌ | 120/140 [00:57<00:09,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:18,791 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  86%|████████▋ | 121/140 [00:58<00:09,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:19,267 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  87%|████████▋ | 122/140 [00:58<00:08,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:19,742 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  88%|████████▊ | 123/140 [00:59<00:08,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:20,217 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  89%|████████▊ | 124/140 [00:59<00:07,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:20,693 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  89%|████████▉ | 125/140 [01:00<00:07,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:21,169 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  90%|█████████ | 126/140 [01:00<00:07,  1.96it/s][A[0m[33mWARNING 2026-04-17 16:12:21,791 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  91%|█████████ | 127/140 [01:01<00:06,  1.96it/s][A[0m[33mWARNING 2026-04-17 16:12:22,274 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=8 and prev_obj_num=16
+
+propagate_in_video:  91%|█████████▏| 128/140 [01:01<00:06,  1.99it/s][A[0m[33mWARNING 2026-04-17 16:12:22,750 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  92%|█████████▏| 129/140 [01:02<00:05,  2.03it/s][A[0m[33mWARNING 2026-04-17 16:12:23,225 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  93%|█████████▎| 130/140 [01:02<00:04,  2.05it/s][A[0m[33mWARNING 2026-04-17 16:12:23,701 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=7 and prev_obj_num=16
+
+propagate_in_video:  94%|█████████▎| 131/140 [01:03<00:04,  2.06it/s][A[0m[33mWARNING 2026-04-17 16:12:24,176 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video:  94%|█████████▍| 132/140 [01:03<00:03,  2.08it/s][A[0m[33mWARNING 2026-04-17 16:12:24,651 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=3 and prev_obj_num=16
+
+propagate_in_video:  95%|█████████▌| 133/140 [01:03<00:03,  2.08it/s][A[0m[33mWARNING 2026-04-17 16:12:25,127 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=4 and prev_obj_num=16
+
+propagate_in_video:  96%|█████████▌| 134/140 [01:04<00:02,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:25,602 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+
+propagate_in_video:  96%|█████████▋| 135/140 [01:04<00:02,  2.09it/s][A[0m[33mWARNING 2026-04-17 16:12:26,077 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=6 and prev_obj_num=16
+
+propagate_in_video:  97%|█████████▋| 136/140 [01:05<00:01,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:26,553 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=5 and prev_obj_num=16
+
+propagate_in_video:  98%|█████████▊| 137/140 [01:05<00:01,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:27,028 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=4 and prev_obj_num=16
+
+propagate_in_video:  99%|█████████▊| 138/140 [01:06<00:00,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:27,504 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=5 and prev_obj_num=16
+
+propagate_in_video:  99%|█████████▉| 139/140 [01:06<00:00,  2.10it/s][A[0m[33mWARNING 2026-04-17 16:12:27,980 53571 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+
+propagate_in_video: 100%|██████████| 140/140 [01:07<00:00,  1.95it/s][Apropagate_in_video: 100%|██████████| 140/140 [01:07<00:00,  2.08it/s]
+[0m[32mINFO 2026-04-17 16:12:28,213 53571 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 100.00%, subscription rate: 1600.00%
+[0m[32mINFO 2026-04-17 16:12:28,214 53571 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=True).
+propagate_in_video: 0it [00:00, ?it/s]propagate_in_video: 0it [00:00, ?it/s]
+[0m[32mINFO 2026-04-17 16:12:28,214 53571 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 100.00%, subscription rate: 1600.00%
+[0m[32mINFO 2026-04-17 16:12:28,214 53571 sam3_base_predictor.py: 286:[0m propagation ended in session 84006384-12b1-4944-9e72-18d3a380e2f6
+2026-04-17 16:12:28,214 INFO sam3p1_phase3 | after propagate | allocated=9.00 GiB reserved=10.68 GiB
+2026-04-17 16:12:28,305 INFO sam3p1_phase3 | propagate: 140 frames in 67.54s (2.07 fps), seen_ids=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], nonempty_masks=2148
+[0m[32mINFO 2026-04-17 16:12:28,374 53571 sam3_base_predictor.py: 305:[0m removed session 84006384-12b1-4944-9e72-18d3a380e2f6
+2026-04-17 16:12:28,374 INFO sam3p1_phase3 | close_session ok
+2026-04-17 16:12:28,374 INFO sam3p1_phase3 | Phase 3 propagation test PASSED

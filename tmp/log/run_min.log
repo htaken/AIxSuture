@@ -1,0 +1,108 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 13:32:08,905 11163 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 4 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 13:32:09,235 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 13:32:09,430 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 13:32:16,749 INFO sam3p1_phase3 | predictor built in 13.42s
+2026-04-17 13:32:16,750 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/30 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 13:32:16,782 11163 sam3_base_predictor.py: 130:[0m started new session 095e1bee-6371-4926-b28c-575d90626348
+2026-04-17 13:32:16,782 INFO sam3p1_phase3 | session_id=095e1bee-6371-4926-b28c-575d90626348
+[0m[32mINFO 2026-04-17 13:32:16,783 11163 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:  30%|███       | 9/30 [00:00<00:00, 82.05it/s]frame loading (image folder) [rank=0]:  60%|██████    | 18/30 [00:00<00:00, 81.23it/s]frame loading (image folder) [rank=0]:  90%|█████████ | 27/30 [00:00<00:00, 79.96it/s]frame loading (image folder) [rank=0]: 100%|██████████| 30/30 [00:00<00:00, 73.52it/s]
+2026-04-17 13:32:18,806 INFO sam3p1_phase3 | add_prompt text='person' in 2.02s
+2026-04-17 13:32:18,806 INFO sam3p1_phase3 | initial obj_ids=[0, 1, 2, 3]
+2026-04-17 13:32:18,806 INFO sam3p1_phase3 | before propagate | allocated=4.34 GiB reserved=5.27 GiB
+[0m[32mINFO 2026-04-17 13:32:18,806 11163 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=False).
+propagate_in_video:   0%|          | 0/30 [00:00<?, ?it/s]propagate_in_video:   0%|          | 0/30 [00:05<?, ?it/s]
+[0m[32mINFO 2026-04-17 13:32:24,452 11163 sam3_base_predictor.py: 286:[0m propagation ended in session 095e1bee-6371-4926-b28c-575d90626348
+[0m[32mINFO 2026-04-17 13:32:24,518 11163 sam3_base_predictor.py: 305:[0m removed session 095e1bee-6371-4926-b28c-575d90626348
+2026-04-17 13:32:24,518 INFO sam3p1_phase3 | close_session ok
+2026-04-17 13:32:24,518 ERROR sam3p1_phase3 | Phase 3 propagation test FAILED
+Traceback (most recent call last):
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 329, in main
+    return run(cfg)
+           ^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 242, in run
+    outputs_per_frame = _propagate(predictor, session_id)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 161, in _propagate
+    for response in predictor.handle_stream_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 40, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_base_predictor.py", line 90, in handle_stream_request
+    yield from self.propagate_in_video(
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_base_predictor.py", line 273, in propagate_in_video
+    for frame_idx, outputs in self.model.propagate_in_video(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 40, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 2315, in propagate_in_video
+    yield from super().propagate_in_video(
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 40, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 351, in propagate_in_video
+    out = self._run_single_frame_inference(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 620, in _run_single_frame_inference
+    ) = self._det_track_one_frame(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_base.py", line 447, in _det_track_one_frame
+    return self._det_track_one_frame_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_base.py", line 506, in _det_track_one_frame_impl
+    det_out, pos_pred_mask = self.run_backbone_and_detection(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_base.py", line 680, in run_backbone_and_detection
+    self.detector.forward_video_grounding_batched_multigpu(
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_detector.py", line 722, in forward_video_grounding_batched_multigpu
+    chunk_outputs = self._process_grounding_chunk_batched(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_detector.py", line 792, in _process_grounding_chunk_batched
+    out = self.forward_grounding(
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_image.py", line 483, in forward_grounding
+    self._run_segmentation_heads(
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_image.py", line 402, in _run_segmentation_heads
+    seg_head_outputs = activation_ckpt_wrapper(self.segmentation_head)(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/act_ckpt_utils.py", line 88, in act_ckpt_wrapper
+    ret = module(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/maskformer_segmentation.py", line 318, in forward
+    pixel_embed = self._embed_pixels(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/maskformer_segmentation.py", line 142, in _embed_pixels
+    pixel_embed = checkpoint.checkpoint(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/_compile.py", line 54, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1263, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 512, in checkpoint
+    ret = function(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/maskformer_segmentation.py", line 222, in forward
+    prev_fpn = curr_fpn + F.interpolate(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 11.63 GiB of which 188.94 MiB is free. Including non-PyTorch memory, this process has 11.14 GiB memory in use. Of the allocated memory 10.69 GiB is allocated by PyTorch, and 321.73 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

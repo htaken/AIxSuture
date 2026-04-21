@@ -1,0 +1,20 @@
+2026-04-17 17:48:51,541 INFO sam3p1_smoke | Torch 2.11.0+cu128, CUDA 12.8
+2026-04-17 17:48:51,556 INFO sam3p1_smoke | Device: NVIDIA GeForce RTX 3060
+2026-04-17 17:48:51,556 INFO sam3p1_smoke | before build | allocated=0.00 GiB reserved=0.00 GiB total=11.63 GiB
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 17:48:57,409 128045 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 17:48:57,671 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 17:48:57,851 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 17:48:59,534 INFO sam3p1_smoke | Predictor built in 7.33s
+2026-04-17 17:48:59,534 INFO sam3p1_smoke | after build | allocated=3.65 GiB reserved=3.75 GiB total=11.63 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/270 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 17:48:59,575 128045 sam3_base_predictor.py: 130:[0m started new session b4b617f5-e3a7-4895-b364-f2b6ed841633
+2026-04-17 17:48:59,575 INFO sam3p1_smoke | start_session ok: session_id=b4b617f5-e3a7-4895-b364-f2b6ed841633 (0.04s)
+2026-04-17 17:48:59,575 INFO sam3p1_smoke | after start_session | allocated=3.67 GiB reserved=3.77 GiB total=11.63 GiB
+[0m[32mINFO 2026-04-17 17:48:59,637 128045 sam3_base_predictor.py: 305:[0m removed session b4b617f5-e3a7-4895-b364-f2b6ed841633
+2026-04-17 17:48:59,637 INFO sam3p1_smoke | close_session ok
+2026-04-17 17:48:59,637 INFO sam3p1_smoke | after close_session | allocated=3.66 GiB reserved=3.77 GiB total=11.63 GiB
+2026-04-17 17:48:59,637 INFO sam3p1_smoke | Phase 1 smoke test PASSED

@@ -1,0 +1,47 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 16:07:53,726 51700 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 16:07:53,921 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 16:07:54,106 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 16:07:55,728 INFO sam3p1_phase3 | predictor built in 7.50s
+2026-04-17 16:07:55,729 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/30 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 16:07:55,746 51700 sam3_base_predictor.py: 130:[0m started new session 0484504a-e00c-43dc-a4f2-a3291bee5d6f
+2026-04-17 16:07:55,746 INFO sam3p1_phase3 | session_id=0484504a-e00c-43dc-a4f2-a3291bee5d6f
+[0m[32mINFO 2026-04-17 16:07:55,746 51700 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:  33%|███▎      | 10/30 [00:00<00:00, 91.95it/s]frame loading (image folder) [rank=0]:  67%|██████▋   | 20/30 [00:00<00:00, 32.53it/s]frame loading (image folder) [rank=0]:  87%|████████▋ | 26/30 [00:00<00:00, 23.06it/s][0m[33mWARNING 2026-04-17 16:07:56,766 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=27 and prev_obj_num=0
+frame loading (image folder) [rank=0]: 100%|██████████| 30/30 [00:01<00:00, 29.05it/s]
+2026-04-17 16:07:56,849 INFO sam3p1_phase3 | add_prompt text='window' in 1.10s
+2026-04-17 16:07:56,849 INFO sam3p1_phase3 | initial obj_ids=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2026-04-17 16:07:56,849 INFO sam3p1_phase3 | before propagate | allocated=4.37 GiB reserved=5.67 GiB
+[0m[32mINFO 2026-04-17 16:07:56,849 51700 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=False).
+propagate_in_video:   0%|          | 0/30 [00:00<?, ?it/s][0m[33mWARNING 2026-04-17 16:07:57,270 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+propagate_in_video:   3%|▎         | 1/30 [00:00<00:12,  2.37it/s][0m[33mWARNING 2026-04-17 16:07:57,708 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+propagate_in_video:   7%|▋         | 2/30 [00:00<00:12,  2.32it/s][0m[33mWARNING 2026-04-17 16:07:58,151 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+propagate_in_video:  10%|█         | 3/30 [00:01<00:11,  2.29it/s][0m[33mWARNING 2026-04-17 16:07:58,600 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+propagate_in_video:  13%|█▎        | 4/30 [00:01<00:11,  2.27it/s][0m[33mWARNING 2026-04-17 16:07:59,055 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=13 and prev_obj_num=16
+propagate_in_video:  17%|█▋        | 5/30 [00:02<00:11,  2.24it/s][0m[33mWARNING 2026-04-17 16:07:59,517 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+propagate_in_video:  20%|██        | 6/30 [00:02<00:10,  2.21it/s][0m[33mWARNING 2026-04-17 16:07:59,984 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=13 and prev_obj_num=16
+propagate_in_video:  23%|██▎       | 7/30 [00:03<00:10,  2.19it/s][0m[33mWARNING 2026-04-17 16:08:00,458 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+propagate_in_video:  27%|██▋       | 8/30 [00:03<00:10,  2.16it/s][0m[33mWARNING 2026-04-17 16:08:00,932 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+propagate_in_video:  30%|███       | 9/30 [00:04<00:09,  2.15it/s]propagate_in_video:  33%|███▎      | 10/30 [00:04<00:09,  2.14it/s]propagate_in_video:  37%|███▋      | 11/30 [00:05<00:08,  2.13it/s][0m[33mWARNING 2026-04-17 16:08:02,354 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=12 and prev_obj_num=16
+propagate_in_video:  40%|████      | 12/30 [00:05<00:08,  2.12it/s][0m[33mWARNING 2026-04-17 16:08:02,828 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=4 and prev_obj_num=16
+propagate_in_video:  43%|████▎     | 13/30 [00:05<00:08,  2.12it/s][0m[33mWARNING 2026-04-17 16:08:03,301 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=10 and prev_obj_num=16
+propagate_in_video:  47%|████▋     | 14/30 [00:06<00:07,  2.12it/s]propagate_in_video:  50%|█████     | 15/30 [00:06<00:07,  2.11it/s][0m[33mWARNING 2026-04-17 16:08:04,249 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=9 and prev_obj_num=16
+propagate_in_video:  53%|█████▎    | 16/30 [00:07<00:06,  2.11it/s]propagate_in_video:  57%|█████▋    | 17/30 [00:07<00:06,  2.11it/s][0m[33mWARNING 2026-04-17 16:08:05,197 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=15 and prev_obj_num=16
+propagate_in_video:  60%|██████    | 18/30 [00:08<00:05,  2.11it/s][0m[33mWARNING 2026-04-17 16:08:05,670 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=3 and prev_obj_num=16
+propagate_in_video:  63%|██████▎   | 19/30 [00:08<00:05,  2.11it/s]propagate_in_video:  67%|██████▋   | 20/30 [00:09<00:04,  2.11it/s]propagate_in_video:  70%|███████   | 21/30 [00:09<00:04,  2.11it/s]propagate_in_video:  73%|███████▎  | 22/30 [00:10<00:03,  2.11it/s]propagate_in_video:  77%|███████▋  | 23/30 [00:10<00:03,  2.11it/s]propagate_in_video:  80%|████████  | 24/30 [00:11<00:02,  2.11it/s][0m[33mWARNING 2026-04-17 16:08:08,513 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+propagate_in_video:  83%|████████▎ | 25/30 [00:11<00:02,  2.11it/s][0m[33mWARNING 2026-04-17 16:08:08,987 51700 sam3_video_base.py:  61:[0m hitting tracking_obj.max_num_objects=16 with new_det_num=1 and prev_obj_num=16
+propagate_in_video:  87%|████████▋ | 26/30 [00:12<00:01,  2.11it/s]propagate_in_video:  90%|█████████ | 27/30 [00:12<00:01,  2.11it/s]propagate_in_video:  93%|█████████▎| 28/30 [00:13<00:00,  2.11it/s]propagate_in_video:  97%|█████████▋| 29/30 [00:13<00:00,  2.11it/s]propagate_in_video: 100%|██████████| 30/30 [00:14<00:00,  1.91it/s]propagate_in_video: 100%|██████████| 30/30 [00:14<00:00,  2.11it/s]
+[0m[32mINFO 2026-04-17 16:08:11,142 51700 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 100.00%, subscription rate: 1600.00%
+[0m[32mINFO 2026-04-17 16:08:11,142 51700 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=True).
+propagate_in_video: 0it [00:00, ?it/s]propagate_in_video: 0it [00:00, ?it/s]
+[0m[32mINFO 2026-04-17 16:08:11,142 51700 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 100.00%, subscription rate: 1600.00%
+[0m[32mINFO 2026-04-17 16:08:11,142 51700 sam3_base_predictor.py: 286:[0m propagation ended in session 0484504a-e00c-43dc-a4f2-a3291bee5d6f
+2026-04-17 16:08:11,143 INFO sam3p1_phase3 | after propagate | allocated=5.48 GiB reserved=7.45 GiB
+2026-04-17 16:08:11,163 INFO sam3p1_phase3 | propagate: 30 frames in 14.29s (2.10 fps), seen_ids=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], nonempty_masks=480
+[0m[32mINFO 2026-04-17 16:08:11,227 51700 sam3_base_predictor.py: 305:[0m removed session 0484504a-e00c-43dc-a4f2-a3291bee5d6f
+2026-04-17 16:08:11,227 INFO sam3p1_phase3 | close_session ok
+2026-04-17 16:08:11,227 INFO sam3p1_phase3 | Phase 3 propagation test PASSED

@@ -1,0 +1,127 @@
+video_id,package,frame_t_tag,frame_idx,frame_h,frame_w,prompt,prompts_version,processor_threshold,checkpoint_path,device,n_detections,n_boxes,max_score,mean_score,top_box_xyxy,top_box_center_xy,mask_area_ratio,overlay_path,elapsed_s,seed
+A31H,,t5,0,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9727,0.6855,"-2.0,494.2,866.4,1078.0","432.2,786.1",0.176983,overlays/A31H_t5_hand.png,0.163,0
+A31H,,t5,0,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9727,0.6943,"-2.0,494.0,867.0,1078.1","432.5,786.0",0.177350,overlays/A31H_t5_glove.png,0.064,0
+A31H,,t5,0,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,5,5,0.8906,0.6820,"0.8,494.1,865.1,817.5","432.9,655.8",0.160981,overlays/A31H_t5_finger.png,0.064,0
+A31H,,t5,0,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_needle.png,0.064,0
+A31H,,t5,0,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_surgical-needle.png,0.065,0
+A31H,,t5,0,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_needle-holder.png,0.064,0
+A31H,,t5,0,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9531,0.8620,"629.9,-1.4,1244.7,324.0","937.3,161.3",0.023480,overlays/A31H_t5_forceps.png,0.065,0
+A31H,,t5,0,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_surgical-forceps.png,0.064,0
+A31H,,t5,0,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9766,0.8802,"630.0,-1.6,1244.9,324.2","937.5,161.3",0.023659,overlays/A31H_t5_scissors.png,0.064,0
+A31H,,t5,0,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.5547,0.4316,"766.3,815.5,1072.7,975.4","919.5,895.4",0.003585,overlays/A31H_t5_thread.png,0.064,0
+A31H,,t5,0,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_suture-thread.png,0.064,0
+A31H,,t5,0,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_skin.png,0.064,0
+A31H,,t5,0,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_tissue.png,0.064,0
+A31H,,t5,0,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_t5_practice-pad.png,0.064,0
+A31H,,tend,1,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9453,0.9199,"-2.6,-1.7,294.4,702.2","145.9,350.3",0.148950,overlays/A31H_tend_hand.png,0.371,0
+A31H,,tend,1,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9727,0.9590,"-2.6,-1.8,294.6,702.3","146.0,350.3",0.149290,overlays/A31H_tend_glove.png,0.064,0
+A31H,,tend,1,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,10,10,0.9141,0.6402,"-4.8,-3.1,294.1,137.2","144.7,67.0",0.182031,overlays/A31H_tend_finger.png,0.064,0
+A31H,,tend,1,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_needle.png,0.064,0
+A31H,,tend,1,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_surgical-needle.png,0.064,0
+A31H,,tend,1,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_needle-holder.png,0.064,0
+A31H,,tend,1,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9609,0.9479,"701.5,7.8,1330.0,286.4","1015.8,147.1",0.041507,overlays/A31H_tend_forceps.png,0.064,0
+A31H,,tend,1,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_surgical-forceps.png,0.064,0
+A31H,,tend,1,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9883,0.9648,"701.4,7.7,1330.6,287.0","1016.0,147.3",0.041431,overlays/A31H_tend_scissors.png,0.064,0
+A31H,,tend,1,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_thread.png,0.064,0
+A31H,,tend,1,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_suture-thread.png,0.064,0
+A31H,,tend,1,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,4,4,0.6445,0.5308,"1721.3,815.9,1932.7,1079.1","1827.0,947.5",0.103267,overlays/A31H_tend_skin.png,0.064,0
+A31H,,tend,1,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_tissue.png,0.064,0
+A31H,,tend,1,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tend_practice-pad.png,0.064,0
+A31H,,tmid,2,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9688,0.9590,"1087.2,529.8,1923.7,1078.3","1505.4,804.0",0.323386,overlays/A31H_tmid_hand.png,0.375,0
+A31H,,tmid,2,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9805,0.9805,"1086.6,529.1,1924.0,1078.3","1505.3,803.7",0.324139,overlays/A31H_tmid_glove.png,0.065,0
+A31H,,tmid,2,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,8,8,0.8633,0.6677,"483.4,413.3,811.7,583.0","647.6,498.1",0.095902,overlays/A31H_tmid_finger.png,0.064,0
+A31H,,tmid,2,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_needle.png,0.064,0
+A31H,,tmid,2,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_surgical-needle.png,0.064,0
+A31H,,tmid,2,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_needle-holder.png,0.064,0
+A31H,,tmid,2,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9609,0.8802,"1048.0,-1.9,1345.5,336.7","1196.8,167.4",0.026537,overlays/A31H_tmid_forceps.png,0.064,0
+A31H,,tmid,2,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_surgical-forceps.png,0.064,0
+A31H,,tmid,2,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9727,0.8464,"1047.7,-2.0,1345.7,336.7","1196.7,167.4",0.026609,overlays/A31H_tmid_scissors.png,0.064,0
+A31H,,tmid,2,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_thread.png,0.064,0
+A31H,,tmid,2,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_suture-thread.png,0.064,0
+A31H,,tmid,2,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,1,1,0.6016,0.6016,"0.6,854.6,192.7,1079.7","96.7,967.2",0.006943,overlays/A31H_tmid_skin.png,0.065,0
+A31H,,tmid,2,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_tissue.png,0.064,0
+A31H,,tmid,2,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/A31H_tmid_practice-pad.png,0.064,0
+K78J,,t5,3,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9648,0.9453,"-2.5,399.5,694.3,1077.8","345.9,738.6",0.334766,overlays/K78J_t5_hand.png,0.371,0
+K78J,,t5,3,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9766,0.9707,"-2.3,399.3,694.7,1077.6","346.2,738.4",0.335437,overlays/K78J_t5_glove.png,0.064,0
+K78J,,t5,3,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,9,9,0.7852,0.5473,"270.4,561.9,615.4,815.3","442.9,688.6",0.115222,overlays/K78J_t5_finger.png,0.064,0
+K78J,,t5,3,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_needle.png,0.064,0
+K78J,,t5,3,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_surgical-needle.png,0.066,0
+K78J,,t5,3,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_needle-holder.png,0.064,0
+K78J,,t5,3,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,4,4,0.4961,0.4365,"944.6,445.0,1237.3,715.9","1090.9,580.4",0.043261,overlays/K78J_t5_forceps.png,0.064,0
+K78J,,t5,3,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_surgical-forceps.png,0.064,0
+K78J,,t5,3,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,4,4,0.7773,0.6030,"-7.5,256.8,913.0,893.5","452.8,575.1",0.043910,overlays/K78J_t5_scissors.png,0.064,0
+K78J,,t5,3,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_thread.png,0.064,0
+K78J,,t5,3,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_suture-thread.png,0.064,0
+K78J,,t5,3,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_skin.png,0.064,0
+K78J,,t5,3,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_tissue.png,0.064,0
+K78J,,t5,3,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_t5_practice-pad.png,0.064,0
+K78J,,tend,4,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9570,0.9395,"1390.4,766.5,1926.9,1078.6","1658.6,922.5",0.062166,overlays/K78J_tend_hand.png,0.374,0
+K78J,,tend,4,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9609,0.9473,"1390.3,766.1,1928.0,1078.9","1659.2,922.5",0.062441,overlays/K78J_tend_glove.png,0.064,0
+K78J,,tend,4,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,9,9,0.9023,0.6042,"1392.0,767.2,1557.6,1082.4","1474.8,924.8",0.072623,overlays/K78J_tend_finger.png,0.064,0
+K78J,,tend,4,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_needle.png,0.064,0
+K78J,,tend,4,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_surgical-needle.png,0.064,0
+K78J,,tend,4,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_needle-holder.png,0.064,0
+K78J,,tend,4,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9648,0.8581,"264.3,254.1,502.4,890.4","383.3,572.3",0.052455,overlays/K78J_tend_forceps.png,0.064,0
+K78J,,tend,4,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.3320,0.3320,"1389.6,251.7,1687.0,1079.1","1538.3,665.4",0.047396,overlays/K78J_tend_surgical-forceps.png,0.064,0
+K78J,,tend,4,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9688,0.8555,"263.8,253.9,502.8,890.4","383.3,572.1",0.052981,overlays/K78J_tend_scissors.png,0.064,0
+K78J,,tend,4,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_thread.png,0.065,0
+K78J,,tend,4,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.6523,0.5254,"909.4,136.4,1486.7,686.0","1198.1,411.2",0.009383,overlays/K78J_tend_suture-thread.png,0.065,0
+K78J,,tend,4,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_skin.png,0.064,0
+K78J,,tend,4,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_tissue.png,0.064,0
+K78J,,tend,4,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tend_practice-pad.png,0.064,0
+K78J,,tmid,5,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,1,1,0.7188,0.7188,"-3.6,826.0,715.6,1078.5","356.0,952.3",0.073373,overlays/K78J_tmid_hand.png,0.374,0
+K78J,,tmid,5,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,1,1,0.7383,0.7383,"-4.9,826.1,715.8,1078.5","355.4,952.3",0.072145,overlays/K78J_tmid_glove.png,0.064,0
+K78J,,tmid,5,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_finger.png,0.064,0
+K78J,,tmid,5,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_needle.png,0.064,0
+K78J,,tmid,5,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_surgical-needle.png,0.065,0
+K78J,,tmid,5,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_needle-holder.png,0.064,0
+K78J,,tmid,5,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9570,0.7018,"236.2,256.7,477.7,848.2","357.0,552.4",0.041299,overlays/K78J_tmid_forceps.png,0.065,0
+K78J,,tmid,5,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_surgical-forceps.png,0.065,0
+K78J,,tmid,5,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,4,4,0.9688,0.7031,"235.9,256.3,477.9,848.1","356.9,552.2",0.068213,overlays/K78J_tmid_scissors.png,0.064,0
+K78J,,tmid,5,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,1,1,0.5508,0.5508,"989.0,559.1,1704.5,1044.9","1346.7,802.0",0.004823,overlays/K78J_tmid_thread.png,0.065,0
+K78J,,tmid,5,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.6250,0.5342,"987.6,559.1,1705.0,1045.4","1346.3,802.3",0.006443,overlays/K78J_tmid_suture-thread.png,0.065,0
+K78J,,tmid,5,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_skin.png,0.064,0
+K78J,,tmid,5,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_tissue.png,0.064,0
+K78J,,tmid,5,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/K78J_tmid_practice-pad.png,0.064,0
+X14A,,t5,6,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9492,0.8086,"1046.7,590.7,1752.0,1079.4","1399.3,835.0",0.195252,overlays/X14A_t5_hand.png,0.370,0
+X14A,,t5,6,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9531,0.8984,"1046.5,590.3,1752.7,1079.6","1399.6,834.9",0.195513,overlays/X14A_t5_glove.png,0.064,0
+X14A,,t5,6,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,11,11,0.8047,0.5323,"1165.8,589.9,1322.5,741.5","1244.2,665.7",0.122954,overlays/X14A_t5_finger.png,0.065,0
+X14A,,t5,6,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_needle.png,0.064,0
+X14A,,t5,6,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_surgical-needle.png,0.064,0
+X14A,,t5,6,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_needle-holder.png,0.064,0
+X14A,,t5,6,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9648,0.9479,"1464.2,-1.9,1699.0,626.2","1581.6,312.1",0.041676,overlays/X14A_t5_forceps.png,0.065,0
+X14A,,t5,6,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_surgical-forceps.png,0.064,0
+X14A,,t5,6,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9727,0.8958,"1463.9,-2.4,1699.2,626.0","1581.5,311.8",0.042107,overlays/X14A_t5_scissors.png,0.064,0
+X14A,,t5,6,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_thread.png,0.064,0
+X14A,,t5,6,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_suture-thread.png,0.064,0
+X14A,,t5,6,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_skin.png,0.064,0
+X14A,,t5,6,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_tissue.png,0.064,0
+X14A,,t5,6,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_t5_practice-pad.png,0.065,0
+X14A,,tend,7,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,1,1,0.9609,0.9609,"-2.7,431.2,567.4,1078.9","282.4,755.0",0.121656,overlays/X14A_tend_hand.png,0.370,0
+X14A,,tend,7,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,1,1,0.9688,0.9688,"-2.4,430.8,567.8,1079.1","282.7,754.9",0.121929,overlays/X14A_tend_glove.png,0.065,0
+X14A,,tend,7,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,7,7,0.8711,0.5737,"-2.5,430.5,540.8,661.2","269.2,545.8",0.079173,overlays/X14A_tend_finger.png,0.065,0
+X14A,,tend,7,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_needle.png,0.065,0
+X14A,,tend,7,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.4648,0.4600,"306.0,40.7,350.6,431.7","328.3,236.2",0.005246,overlays/X14A_tend_surgical-needle.png,0.065,0
+X14A,,tend,7,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_needle-holder.png,0.064,0
+X14A,,tend,7,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9570,0.9115,"1393.4,-1.5,1748.9,486.5","1571.2,242.5",0.031109,overlays/X14A_tend_forceps.png,0.064,0
+X14A,,tend,7,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_surgical-forceps.png,0.064,0
+X14A,,tend,7,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9766,0.8607,"1393.5,-1.8,1748.9,486.5","1571.2,242.4",0.031527,overlays/X14A_tend_scissors.png,0.064,0
+X14A,,tend,7,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_thread.png,0.064,0
+X14A,,tend,7,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,5,5,0.4141,0.3508,"1117.1,256.9,1261.6,529.5","1189.4,393.2",0.005129,overlays/X14A_tend_suture-thread.png,0.064,0
+X14A,,tend,7,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_skin.png,0.064,0
+X14A,,tend,7,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_tissue.png,0.065,0
+X14A,,tend,7,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tend_practice-pad.png,0.064,0
+X14A,,tmid,8,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9531,0.7520,"-1.0,506.0,618.9,1078.5","308.9,792.2",0.137040,overlays/X14A_tmid_hand.png,0.375,0
+X14A,,tmid,8,1080,1920,glove,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9531,0.7441,"-0.9,505.4,619.7,1078.8","309.4,792.1",0.137337,overlays/X14A_tmid_glove.png,0.064,0
+X14A,,tmid,8,1080,1920,finger,v1,0.3,(HF default: facebook/sam3),cuda,6,6,0.8320,0.6794,"127.4,742.1,612.2,1079.1","369.8,910.6",0.132102,overlays/X14A_tmid_finger.png,0.064,0
+X14A,,tmid,8,1080,1920,needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_needle.png,0.064,0
+X14A,,tmid,8,1080,1920,surgical needle,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_surgical-needle.png,0.064,0
+X14A,,tmid,8,1080,1920,needle holder,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_needle-holder.png,0.065,0
+X14A,,tmid,8,1080,1920,forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.9609,0.9180,"1456.0,42.3,1699.7,689.1","1577.9,365.7",0.034342,overlays/X14A_tmid_forceps.png,0.065,0
+X14A,,tmid,8,1080,1920,surgical forceps,v1,0.3,(HF default: facebook/sam3),cuda,3,3,0.4160,0.3665,"252.9,58.0,425.4,816.4","339.2,437.2",0.034836,overlays/X14A_tmid_surgical-forceps.png,0.064,0
+X14A,,tmid,8,1080,1920,scissors,v1,0.3,(HF default: facebook/sam3),cuda,4,4,0.9688,0.7563,"1456.0,42.1,1699.7,689.0","1577.9,365.6",0.051304,overlays/X14A_tmid_scissors.png,0.064,0
+X14A,,tmid,8,1080,1920,thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_thread.png,0.065,0
+X14A,,tmid,8,1080,1920,suture thread,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_suture-thread.png,0.064,0
+X14A,,tmid,8,1080,1920,skin,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_skin.png,0.064,0
+X14A,,tmid,8,1080,1920,tissue,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_tissue.png,0.064,0
+X14A,,tmid,8,1080,1920,practice pad,v1,0.3,(HF default: facebook/sam3),cuda,0,0,0.0000,0.0000,,,0.000000,overlays/X14A_tmid_practice-pad.png,0.064,0

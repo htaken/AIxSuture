@@ -1,0 +1,120 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 15:37:17,354 32421 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 4 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 15:37:17,608 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 15:37:17,790 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 15:37:20,785 INFO sam3p1_phase3 | predictor built in 8.75s
+2026-04-17 15:37:20,785 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/90 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 15:37:20,829 32421 sam3_base_predictor.py: 130:[0m started new session 0af5730c-3893-43e1-aec2-b14adee9fb4d
+2026-04-17 15:37:20,829 INFO sam3p1_phase3 | session_id=0af5730c-3893-43e1-aec2-b14adee9fb4d
+[0m[32mINFO 2026-04-17 15:37:20,829 32421 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:  11%|█         | 10/90 [00:00<00:00, 95.38it/s]frame loading (image folder) [rank=0]:  22%|██▏       | 20/90 [00:00<00:00, 88.05it/s]frame loading (image folder) [rank=0]:  33%|███▎      | 30/90 [00:00<00:00, 89.98it/s]frame loading (image folder) [rank=0]:  44%|████▍     | 40/90 [00:00<00:00, 92.93it/s]frame loading (image folder) [rank=0]:  56%|█████▌    | 50/90 [00:00<00:00, 44.39it/s]frame loading (image folder) [rank=0]:  63%|██████▎   | 57/90 [00:00<00:00, 48.10it/s]frame loading (image folder) [rank=0]:  74%|███████▍  | 67/90 [00:01<00:00, 57.36it/s]frame loading (image folder) [rank=0]:  83%|████████▎ | 75/90 [00:01<00:00, 35.34it/s]frame loading (image folder) [rank=0]:  92%|█████████▏| 83/90 [00:01<00:00, 42.10it/s]2026-04-17 15:37:22,494 INFO sam3p1_phase3 | add_prompt text='person' in 1.66s
+2026-04-17 15:37:22,494 INFO sam3p1_phase3 | initial obj_ids=[0, 1, 2, 3]
+2026-04-17 15:37:22,494 INFO sam3p1_phase3 | before propagate | allocated=4.67 GiB reserved=5.50 GiB
+[0m[32mINFO 2026-04-17 15:37:22,494 32421 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=False).
+
+propagate_in_video:   0%|          | 0/90 [00:00<?, ?it/s][Aframe loading (image folder) [rank=0]: 100%|██████████| 90/90 [00:02<00:00, 30.13it/s]frame loading (image folder) [rank=0]: 100%|██████████| 90/90 [00:02<00:00, 43.87it/s]
+
+propagate_in_video:   1%|          | 1/90 [00:00<00:41,  2.16it/s][A
+propagate_in_video:   2%|▏         | 2/90 [00:00<00:39,  2.24it/s][A
+propagate_in_video:   3%|▎         | 3/90 [00:01<00:38,  2.28it/s][A
+propagate_in_video:   4%|▍         | 4/90 [00:01<00:37,  2.28it/s][A
+propagate_in_video:   6%|▌         | 5/90 [00:02<00:37,  2.27it/s][A
+propagate_in_video:   7%|▋         | 6/90 [00:02<00:37,  2.26it/s][A
+propagate_in_video:   8%|▊         | 7/90 [00:03<00:37,  2.24it/s][A
+propagate_in_video:   9%|▉         | 8/90 [00:03<00:37,  2.21it/s][A
+propagate_in_video:  10%|█         | 9/90 [00:04<00:36,  2.20it/s][A
+propagate_in_video:  11%|█         | 10/90 [00:04<00:36,  2.19it/s][A
+propagate_in_video:  12%|█▏        | 11/90 [00:04<00:36,  2.18it/s][A
+propagate_in_video:  13%|█▎        | 12/90 [00:05<00:35,  2.18it/s][A
+propagate_in_video:  14%|█▍        | 13/90 [00:05<00:35,  2.17it/s][A
+propagate_in_video:  16%|█▌        | 14/90 [00:06<00:35,  2.17it/s][A
+propagate_in_video:  17%|█▋        | 15/90 [00:06<00:34,  2.17it/s][A
+propagate_in_video:  18%|█▊        | 16/90 [00:07<00:34,  2.17it/s][A
+propagate_in_video:  19%|█▉        | 17/90 [00:07<00:34,  2.13it/s][A
+propagate_in_video:  20%|██        | 18/90 [00:08<00:33,  2.14it/s][A
+propagate_in_video:  21%|██        | 19/90 [00:08<00:33,  2.15it/s][A
+propagate_in_video:  22%|██▏       | 20/90 [00:09<00:32,  2.15it/s][A
+propagate_in_video:  23%|██▎       | 21/90 [00:09<00:32,  2.16it/s][A
+propagate_in_video:  24%|██▍       | 22/90 [00:10<00:31,  2.16it/s][A
+propagate_in_video:  26%|██▌       | 23/90 [00:10<00:31,  2.16it/s][A
+propagate_in_video:  27%|██▋       | 24/90 [00:10<00:30,  2.16it/s][A
+propagate_in_video:  28%|██▊       | 25/90 [00:11<00:30,  2.16it/s][A
+propagate_in_video:  29%|██▉       | 26/90 [00:11<00:29,  2.16it/s][A
+propagate_in_video:  30%|███       | 27/90 [00:12<00:29,  2.16it/s][A
+propagate_in_video:  31%|███       | 28/90 [00:12<00:28,  2.16it/s][A
+propagate_in_video:  32%|███▏      | 29/90 [00:13<00:28,  2.16it/s][A
+propagate_in_video:  33%|███▎      | 30/90 [00:13<00:28,  2.10it/s][A
+propagate_in_video:  34%|███▍      | 31/90 [00:14<00:27,  2.11it/s][A
+propagate_in_video:  36%|███▌      | 32/90 [00:14<00:27,  2.12it/s][A
+propagate_in_video:  37%|███▋      | 33/90 [00:15<00:27,  2.09it/s][A
+propagate_in_video:  38%|███▊      | 34/90 [00:15<00:26,  2.11it/s][A
+propagate_in_video:  39%|███▉      | 35/90 [00:16<00:25,  2.13it/s][A
+propagate_in_video:  40%|████      | 36/90 [00:16<00:25,  2.14it/s][A
+propagate_in_video:  41%|████      | 37/90 [00:17<00:24,  2.14it/s][A
+propagate_in_video:  42%|████▏     | 38/90 [00:17<00:24,  2.15it/s][A
+propagate_in_video:  43%|████▎     | 39/90 [00:18<00:23,  2.15it/s][A
+propagate_in_video:  44%|████▍     | 40/90 [00:18<00:23,  2.15it/s][A
+propagate_in_video:  46%|████▌     | 41/90 [00:18<00:22,  2.15it/s][A
+propagate_in_video:  47%|████▋     | 42/90 [00:19<00:22,  2.15it/s][A
+propagate_in_video:  48%|████▊     | 43/90 [00:19<00:21,  2.16it/s][A
+propagate_in_video:  49%|████▉     | 44/90 [00:20<00:21,  2.16it/s][A
+propagate_in_video:  50%|█████     | 45/90 [00:20<00:20,  2.16it/s][A
+propagate_in_video:  51%|█████     | 46/90 [00:21<00:20,  2.11it/s][A
+propagate_in_video:  52%|█████▏    | 47/90 [00:21<00:20,  2.13it/s][A
+propagate_in_video:  53%|█████▎    | 48/90 [00:22<00:19,  2.13it/s][A
+propagate_in_video:  54%|█████▍    | 49/90 [00:22<00:19,  2.10it/s][A
+propagate_in_video:  56%|█████▌    | 50/90 [00:23<00:18,  2.12it/s][A
+propagate_in_video:  57%|█████▋    | 51/90 [00:23<00:18,  2.13it/s][A
+propagate_in_video:  58%|█████▊    | 52/90 [00:24<00:17,  2.14it/s][A
+propagate_in_video:  59%|█████▉    | 53/90 [00:24<00:17,  2.14it/s][A
+propagate_in_video:  60%|██████    | 54/90 [00:25<00:16,  2.15it/s][A
+propagate_in_video:  61%|██████    | 55/90 [00:25<00:16,  2.15it/s][A
+propagate_in_video:  62%|██████▏   | 56/90 [00:25<00:15,  2.15it/s][A
+propagate_in_video:  63%|██████▎   | 57/90 [00:26<00:15,  2.15it/s][A
+propagate_in_video:  64%|██████▍   | 58/90 [00:26<00:14,  2.16it/s][A
+propagate_in_video:  66%|██████▌   | 59/90 [00:27<00:14,  2.16it/s][A
+propagate_in_video:  67%|██████▋   | 60/90 [00:27<00:13,  2.16it/s][A
+propagate_in_video:  68%|██████▊   | 61/90 [00:28<00:13,  2.16it/s][A
+propagate_in_video:  69%|██████▉   | 62/90 [00:28<00:13,  2.11it/s][A
+propagate_in_video:  70%|███████   | 63/90 [00:29<00:12,  2.13it/s][A
+propagate_in_video:  71%|███████   | 64/90 [00:29<00:12,  2.14it/s][A
+propagate_in_video:  72%|███████▏  | 65/90 [00:30<00:11,  2.11it/s][A
+propagate_in_video:  73%|███████▎  | 66/90 [00:30<00:11,  2.12it/s][A
+propagate_in_video:  74%|███████▍  | 67/90 [00:31<00:10,  2.13it/s][A
+propagate_in_video:  76%|███████▌  | 68/90 [00:31<00:10,  2.14it/s][A
+propagate_in_video:  77%|███████▋  | 69/90 [00:32<00:09,  2.14it/s][A
+propagate_in_video:  78%|███████▊  | 70/90 [00:32<00:09,  2.15it/s][A
+propagate_in_video:  79%|███████▉  | 71/90 [00:32<00:08,  2.15it/s][A
+propagate_in_video:  80%|████████  | 72/90 [00:33<00:08,  2.15it/s][A
+propagate_in_video:  81%|████████  | 73/90 [00:33<00:07,  2.15it/s][A
+propagate_in_video:  82%|████████▏ | 74/90 [00:34<00:07,  2.15it/s][A
+propagate_in_video:  83%|████████▎ | 75/90 [00:34<00:06,  2.16it/s][A
+propagate_in_video:  84%|████████▍ | 76/90 [00:35<00:06,  2.16it/s][A
+propagate_in_video:  86%|████████▌ | 77/90 [00:35<00:06,  2.16it/s][A
+propagate_in_video:  87%|████████▋ | 78/90 [00:36<00:05,  2.12it/s][A
+propagate_in_video:  88%|████████▊ | 79/90 [00:36<00:05,  2.13it/s][A
+propagate_in_video:  89%|████████▉ | 80/90 [00:37<00:04,  2.14it/s][A
+propagate_in_video:  90%|█████████ | 81/90 [00:37<00:04,  2.11it/s][A
+propagate_in_video:  91%|█████████ | 82/90 [00:38<00:03,  2.12it/s][A
+propagate_in_video:  92%|█████████▏| 83/90 [00:38<00:03,  2.13it/s][A
+propagate_in_video:  93%|█████████▎| 84/90 [00:39<00:02,  2.14it/s][A
+propagate_in_video:  94%|█████████▍| 85/90 [00:39<00:02,  2.14it/s][A
+propagate_in_video:  96%|█████████▌| 86/90 [00:39<00:01,  2.15it/s][A
+propagate_in_video:  97%|█████████▋| 87/90 [00:40<00:01,  2.15it/s][A
+propagate_in_video:  98%|█████████▊| 88/90 [00:40<00:00,  2.15it/s][A
+propagate_in_video:  99%|█████████▉| 89/90 [00:41<00:00,  2.15it/s][A
+propagate_in_video: 100%|██████████| 90/90 [00:41<00:00,  2.12it/s][Apropagate_in_video: 100%|██████████| 90/90 [00:41<00:00,  2.15it/s]
+[0m[32mINFO 2026-04-17 15:38:04,366 32421 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 25.00%, subscription rate: 400.00%
+[0m[32mINFO 2026-04-17 15:38:04,366 32421 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=True).
+propagate_in_video: 0it [00:00, ?it/s]propagate_in_video: 0it [00:00, ?it/s]
+[0m[32mINFO 2026-04-17 15:38:04,367 32421 sam3_multiplex_tracking.py: 580:[0m Bucket utilization rate: 25.00%, subscription rate: 400.00%
+[0m[32mINFO 2026-04-17 15:38:04,367 32421 sam3_base_predictor.py: 286:[0m propagation ended in session 0af5730c-3893-43e1-aec2-b14adee9fb4d
+2026-04-17 15:38:04,367 INFO sam3p1_phase3 | after propagate | allocated=6.16 GiB reserved=7.22 GiB
+2026-04-17 15:38:04,375 INFO sam3p1_phase3 | propagate: 90 frames in 41.87s (2.15 fps), seen_ids=[0, 1, 2, 3], nonempty_masks=302
+[0m[32mINFO 2026-04-17 15:38:04,436 32421 sam3_base_predictor.py: 305:[0m removed session 0af5730c-3893-43e1-aec2-b14adee9fb4d
+2026-04-17 15:38:04,437 INFO sam3p1_phase3 | close_session ok
+2026-04-17 15:38:04,437 INFO sam3p1_phase3 | Phase 3 propagation test PASSED

@@ -1,0 +1,53 @@
+2026-04-17 16:16:03,892 WARNING sam3p1_phase3 | No JPEG frames found; overlay output will be skipped.
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 16:16:09,881 57364 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 4 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 16:16:10,241 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 16:16:10,421 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 16:16:12,053 INFO sam3p1_phase3 | predictor built in 7.49s
+2026-04-17 16:16:12,053 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+2026-04-17 16:16:12,054 ERROR sam3p1_phase3 | Phase 3 propagation test FAILED
+Traceback (most recent call last):
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 329, in main
+    return run(cfg)
+           ^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 206, in run
+    response = predictor.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_base_predictor.py", line 45, in handle_request
+    return self.start_session(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_base_predictor.py", line 120, in start_session
+    inference_state = self.model.init_state(**init_kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 2222, in init_state
+    inference_state = super().init_state(
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 223, in init_state
+    images, orig_height, orig_width = load_resource_as_video_frames(
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/io_utils.py", line 82, in load_resource_as_video_frames
+    return load_video_frames(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/io_utils.py", line 152, in load_video_frames
+    return load_video_frames_from_video_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/io_utils.py", line 249, in load_video_frames_from_video_file
+    return load_video_frames_from_video_file_using_cv2(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/io_utils.py", line 297, in load_video_frames_from_video_file_using_cv2
+    import cv2  # delay OpenCV import to avoid unnecessary dependency
+    ^^^^^^^^^^
+ModuleNotFoundError: No module named 'cv2'
+dynamic_multimask_via_stability is reset to False in the multiplex model

@@ -1,0 +1,2 @@
+video_id,package,frame_t_tag,frame_idx,frame_h,frame_w,prompt,prompts_version,processor_threshold,checkpoint_path,device,n_detections,n_boxes,max_score,mean_score,top_box_xyxy,top_box_center_xy,mask_area_ratio,overlay_path,elapsed_s,seed
+A31H,,t5,0,1080,1920,hand,v1,0.3,(HF default: facebook/sam3),cuda,2,2,0.9727,0.6855,"-2.0,494.2,866.4,1078.0","432.2,786.1",0.176983,overlays/A31H_t5_hand.png,0.159,0

@@ -1,0 +1,184 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 17:31:39,954 112786 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 4 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 17:31:40,303 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 17:31:40,486 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 17:31:42,690 INFO sam3p1_phase3 | predictor built in 8.03s
+2026-04-17 17:31:42,690 INFO sam3p1_phase3 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/200 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 17:31:42,724 112786 sam3_base_predictor.py: 130:[0m started new session 53b6efda-073a-4753-a098-8a907958246f
+2026-04-17 17:31:42,724 INFO sam3p1_phase3 | session_id=53b6efda-073a-4753-a098-8a907958246f
+[0m[32mINFO 2026-04-17 17:31:42,724 112786 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:   6%|▌         | 11/200 [00:00<00:01, 106.65it/s]frame loading (image folder) [rank=0]:  11%|█         | 22/200 [00:00<00:04, 38.20it/s] frame loading (image folder) [rank=0]:  16%|█▌        | 31/200 [00:00<00:03, 48.87it/s]frame loading (image folder) [rank=0]:  19%|█▉        | 38/200 [00:01<00:05, 29.95it/s]2026-04-17 17:31:43,812 INFO sam3p1_phase3 | add_prompt text='person' in 1.09s
+2026-04-17 17:31:43,812 INFO sam3p1_phase3 | initial obj_ids=[0, 1]
+2026-04-17 17:31:43,812 INFO sam3p1_phase3 | before propagate | allocated=4.41 GiB reserved=5.27 GiB
+[0m[32mINFO 2026-04-17 17:31:43,812 112786 sam3_multiplex_tracking.py:2314:[0m Running full VG propagation (reverse=False).
+
+propagate_in_video:   0%|          | 0/200 [00:00<?, ?it/s][Aframe loading (image folder) [rank=0]:  22%|██▎       | 45/200 [00:02<00:11, 13.41it/s]frame loading (image folder) [rank=0]:  24%|██▍       | 49/200 [00:02<00:11, 13.39it/s]frame loading (image folder) [rank=0]:  28%|██▊       | 55/200 [00:02<00:08, 17.12it/s]
+propagate_in_video:   0%|          | 1/200 [00:01<05:19,  1.61s/it][Aframe loading (image folder) [rank=0]:  30%|███       | 61/200 [00:02<00:06, 21.76it/s]
+propagate_in_video:   2%|▏         | 4/200 [00:01<01:06,  2.93it/s][Aframe loading (image folder) [rank=0]:  33%|███▎      | 66/200 [00:03<00:12, 11.17it/s]frame loading (image folder) [rank=0]:  35%|███▌      | 70/200 [00:04<00:12, 10.58it/s]frame loading (image folder) [rank=0]:  37%|███▋      | 74/200 [00:04<00:09, 12.87it/s]frame loading (image folder) [rank=0]:  38%|███▊      | 77/200 [00:04<00:08, 14.37it/s]
+propagate_in_video:   3%|▎         | 6/200 [00:03<01:46,  1.82it/s][Aframe loading (image folder) [rank=0]:  40%|████      | 81/200 [00:04<00:07, 16.67it/s]
+propagate_in_video:   4%|▍         | 8/200 [00:03<01:10,  2.73it/s][Aframe loading (image folder) [rank=0]:  42%|████▏     | 84/200 [00:05<00:17,  6.74it/s]frame loading (image folder) [rank=0]:  44%|████▎     | 87/200 [00:06<00:13,  8.33it/s]frame loading (image folder) [rank=0]:  46%|████▌     | 91/200 [00:06<00:09, 11.01it/s]frame loading (image folder) [rank=0]:  47%|████▋     | 94/200 [00:06<00:08, 12.61it/s]
+propagate_in_video:   5%|▌         | 10/200 [00:05<01:41,  1.87it/s][Aframe loading (image folder) [rank=0]:  49%|████▉     | 98/200 [00:06<00:06, 15.25it/s]
+propagate_in_video:   6%|▌         | 12/200 [00:05<01:11,  2.64it/s][Aframe loading (image folder) [rank=0]:  50%|█████     | 101/200 [00:07<00:16,  6.16it/s]frame loading (image folder) [rank=0]:  52%|█████▏    | 104/200 [00:07<00:12,  7.82it/s]frame loading (image folder) [rank=0]:  54%|█████▍    | 108/200 [00:07<00:08, 10.58it/s]
+propagate_in_video:   6%|▋         | 13/200 [00:06<01:55,  1.62it/s][Aframe loading (image folder) [rank=0]:  56%|█████▌    | 111/200 [00:08<00:07, 12.27it/s]
+propagate_in_video:   8%|▊         | 15/200 [00:07<01:18,  2.36it/s][Aframe loading (image folder) [rank=0]:  57%|█████▊    | 115/200 [00:08<00:05, 15.01it/s]frame loading (image folder) [rank=0]:  59%|█████▉    | 118/200 [00:09<00:13,  6.06it/s]frame loading (image folder) [rank=0]:  60%|██████    | 121/200 [00:09<00:10,  7.72it/s]frame loading (image folder) [rank=0]:  62%|██████▎   | 125/200 [00:09<00:07, 10.50it/s]frame loading (image folder) [rank=0]:  64%|██████▍   | 129/200 [00:09<00:05, 13.82it/s]
+propagate_in_video:   8%|▊         | 17/200 [00:08<01:43,  1.76it/s][Aframe loading (image folder) [rank=0]:  66%|██████▌   | 132/200 [00:10<00:04, 15.31it/s]
+propagate_in_video:  10%|▉         | 19/200 [00:08<01:13,  2.45it/s][Aframe loading (image folder) [rank=0]:  68%|██████▊   | 136/200 [00:11<00:08,  7.40it/s]frame loading (image folder) [rank=0]:  69%|██████▉   | 138/200 [00:11<00:09,  6.87it/s]frame loading (image folder) [rank=0]:  72%|███████▏  | 144/200 [00:11<00:05, 11.06it/s]
+propagate_in_video:  10%|█         | 21/200 [00:10<01:37,  1.83it/s][Aframe loading (image folder) [rank=0]:  74%|███████▎  | 147/200 [00:11<00:04, 12.56it/s]
+propagate_in_video:  12%|█▏        | 23/200 [00:10<01:10,  2.51it/s][Aframe loading (image folder) [rank=0]:  76%|███████▌  | 151/200 [00:11<00:03, 15.07it/s]frame loading (image folder) [rank=0]:  77%|███████▋  | 154/200 [00:13<00:07,  6.21it/s]frame loading (image folder) [rank=0]:  78%|███████▊  | 157/200 [00:13<00:05,  7.83it/s]frame loading (image folder) [rank=0]:  80%|████████  | 161/200 [00:13<00:03, 10.55it/s]
+propagate_in_video:  12%|█▎        | 25/200 [00:12<01:33,  1.87it/s][Aframe loading (image folder) [rank=0]:  82%|████████▏ | 164/200 [00:13<00:02, 12.20it/s]
+propagate_in_video:  14%|█▎        | 27/200 [00:12<01:08,  2.53it/s][Aframe loading (image folder) [rank=0]:  84%|████████▍ | 168/200 [00:13<00:02, 14.89it/s]frame loading (image folder) [rank=0]:  86%|████████▌ | 171/200 [00:15<00:04,  6.04it/s]frame loading (image folder) [rank=0]:  87%|████████▋ | 174/200 [00:15<00:03,  7.67it/s]frame loading (image folder) [rank=0]:  88%|████████▊ | 177/200 [00:15<00:02,  9.57it/s]
+propagate_in_video:  14%|█▍        | 29/200 [00:14<01:30,  1.88it/s][Aframe loading (image folder) [rank=0]:  90%|█████████ | 180/200 [00:15<00:01, 11.39it/s]frame loading (image folder) [rank=0]:  92%|█████████▏| 184/200 [00:15<00:01, 14.99it/s]
+propagate_in_video:  16%|█▌        | 31/200 [00:14<01:06,  2.52it/s][Aframe loading (image folder) [rank=0]:  94%|█████████▎| 187/200 [00:16<00:01,  7.18it/s]frame loading (image folder) [rank=0]:  94%|█████████▍| 189/200 [00:17<00:01,  6.24it/s]frame loading (image folder) [rank=0]:  98%|█████████▊| 195/200 [00:17<00:00, 10.45it/s]frame loading (image folder) [rank=0]: 100%|█████████▉| 199/200 [00:17<00:00, 13.51it/s]
+propagate_in_video:  16%|█▋        | 33/200 [00:16<01:29,  1.87it/s][Aframe loading (image folder) [rank=0]: 100%|██████████| 200/200 [00:17<00:00, 11.51it/s]
+
+propagate_in_video:  18%|█▊        | 35/200 [00:16<01:05,  2.52it/s][A
+propagate_in_video:  18%|█▊        | 37/200 [00:18<01:26,  1.89it/s][A
+propagate_in_video:  20%|█▉        | 39/200 [00:18<01:03,  2.55it/s][A
+propagate_in_video:  20%|██        | 41/200 [00:19<01:23,  1.90it/s][A
+propagate_in_video:  22%|██▏       | 43/200 [00:19<01:01,  2.56it/s][A
+propagate_in_video:  22%|██▎       | 45/200 [00:21<01:21,  1.91it/s][A
+propagate_in_video:  24%|██▎       | 47/200 [00:21<00:59,  2.56it/s][A
+propagate_in_video:  24%|██▍       | 49/200 [00:23<01:19,  1.89it/s][A
+propagate_in_video:  26%|██▌       | 51/200 [00:23<00:58,  2.55it/s][A
+propagate_in_video:  26%|██▋       | 53/200 [00:25<01:17,  1.90it/s][A
+propagate_in_video:  28%|██▊       | 55/200 [00:25<00:56,  2.56it/s][A
+propagate_in_video:  28%|██▊       | 57/200 [00:27<01:15,  1.90it/s][A
+propagate_in_video:  30%|██▉       | 59/200 [00:27<00:54,  2.57it/s][A
+propagate_in_video:  30%|███       | 61/200 [00:29<01:12,  1.91it/s][A
+propagate_in_video:  32%|███▏      | 63/200 [00:29<00:53,  2.56it/s][A
+propagate_in_video:  32%|███▎      | 65/200 [00:30<01:11,  1.89it/s][A
+propagate_in_video:  34%|███▎      | 67/200 [00:31<00:52,  2.55it/s][A
+propagate_in_video:  34%|███▍      | 69/200 [00:32<01:08,  1.90it/s][A
+propagate_in_video:  36%|███▌      | 71/200 [00:32<00:50,  2.56it/s][A
+propagate_in_video:  36%|███▋      | 73/200 [00:34<01:06,  1.91it/s][A
+propagate_in_video:  38%|███▊      | 75/200 [00:34<00:48,  2.57it/s][A
+propagate_in_video:  38%|███▊      | 77/200 [00:36<01:04,  1.91it/s][A
+propagate_in_video:  40%|███▉      | 79/200 [00:36<00:47,  2.56it/s][A
+propagate_in_video:  40%|████      | 81/200 [00:38<01:02,  1.89it/s][A
+propagate_in_video:  42%|████▏     | 83/200 [00:38<00:45,  2.55it/s][A
+propagate_in_video:  42%|████▎     | 85/200 [00:40<01:00,  1.90it/s][A
+propagate_in_video:  44%|████▎     | 87/200 [00:40<00:44,  2.56it/s][A
+propagate_in_video:  44%|████▍     | 89/200 [00:41<00:58,  1.90it/s][A
+propagate_in_video:  46%|████▌     | 91/200 [00:41<00:42,  2.57it/s][A
+propagate_in_video:  46%|████▋     | 93/200 [00:43<00:56,  1.91it/s][A
+propagate_in_video:  48%|████▊     | 95/200 [00:43<00:41,  2.56it/s][A
+propagate_in_video:  48%|████▊     | 97/200 [00:45<00:54,  1.89it/s][A
+propagate_in_video:  50%|████▉     | 99/200 [00:45<00:39,  2.55it/s][A
+propagate_in_video:  50%|█████     | 101/200 [00:47<00:52,  1.90it/s][A
+propagate_in_video:  52%|█████▏    | 103/200 [00:47<00:37,  2.56it/s][A
+propagate_in_video:  52%|█████▎    | 105/200 [00:49<00:49,  1.90it/s][A
+propagate_in_video:  54%|█████▎    | 107/200 [00:49<00:36,  2.56it/s][A
+propagate_in_video:  55%|█████▍    | 109/200 [00:51<00:47,  1.91it/s][A
+propagate_in_video:  56%|█████▌    | 111/200 [00:51<00:34,  2.55it/s][A
+propagate_in_video:  56%|█████▋    | 113/200 [00:52<00:46,  1.89it/s][A
+propagate_in_video:  57%|█████▊    | 115/200 [00:53<00:33,  2.54it/s][A
+propagate_in_video:  58%|█████▊    | 117/200 [00:54<00:43,  1.90it/s][A
+propagate_in_video:  60%|█████▉    | 119/200 [00:54<00:31,  2.56it/s][A
+propagate_in_video:  60%|██████    | 121/200 [00:56<00:41,  1.89it/s][A
+propagate_in_video:  62%|██████▏   | 123/200 [00:56<00:30,  2.55it/s][Apropagate_in_video:  62%|██████▏   | 124/200 [00:58<00:35,  2.13it/s]
+[0m[32mINFO 2026-04-17 17:32:42,145 112786 sam3_base_predictor.py: 286:[0m propagation ended in session 53b6efda-073a-4753-a098-8a907958246f
+[0m[32mINFO 2026-04-17 17:32:42,213 112786 sam3_base_predictor.py: 305:[0m removed session 53b6efda-073a-4753-a098-8a907958246f
+2026-04-17 17:32:42,213 INFO sam3p1_phase3 | close_session ok
+2026-04-17 17:32:42,213 ERROR sam3p1_phase3 | Phase 3 propagation test FAILED
+Traceback (most recent call last):
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 329, in main
+    return run(cfg)
+           ^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 242, in run
+    outputs_per_frame = _propagate(predictor, session_id)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/scripts/verify_sam3p1_phase3.py", line 161, in _propagate
+    for response in predictor.handle_stream_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 61, in generator_context
+    response = gen.send(request)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_base_predictor.py", line 90, in handle_stream_request
+    yield from self.propagate_in_video(
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_base_predictor.py", line 273, in propagate_in_video
+    for frame_idx, outputs in self.model.propagate_in_video(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 61, in generator_context
+    response = gen.send(request)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 2315, in propagate_in_video
+    yield from super().propagate_in_video(
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 61, in generator_context
+    response = gen.send(request)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 351, in propagate_in_video
+    out = self._run_single_frame_inference(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_tracking.py", line 620, in _run_single_frame_inference
+    ) = self._det_track_one_frame(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_base.py", line 447, in _det_track_one_frame
+    return self._det_track_one_frame_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_base.py", line 506, in _det_track_one_frame_impl
+    det_out, pos_pred_mask = self.run_backbone_and_detection(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_base.py", line 680, in run_backbone_and_detection
+    self.detector.forward_video_grounding_batched_multigpu(
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_detector.py", line 722, in forward_video_grounding_batched_multigpu
+    chunk_outputs = self._process_grounding_chunk_batched(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_multiplex_detector.py", line 792, in _process_grounding_chunk_batched
+    out = self.forward_grounding(
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_image.py", line 483, in forward_grounding
+    self._run_segmentation_heads(
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/sam3_image.py", line 402, in _run_segmentation_heads
+    seg_head_outputs = activation_ckpt_wrapper(self.segmentation_head)(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/act_ckpt_utils.py", line 88, in act_ckpt_wrapper
+    ret = module(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/maskformer_segmentation.py", line 318, in forward
+    pixel_embed = self._embed_pixels(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/maskformer_segmentation.py", line 142, in _embed_pixels
+    pixel_embed = checkpoint.checkpoint(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/_compile.py", line 54, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1263, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 512, in checkpoint
+    ret = function(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/sam3/model/maskformer_segmentation.py", line 229, in forward
+    prev_fpn = F.relu(self.norms[layer_idx](prev_fpn))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py", line 327, in forward
+    return F.group_norm(input, self.num_groups, self.weight, self.bias, self.eps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2990, in group_norm
+    return torch.group_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 11.63 GiB of which 170.25 MiB is free. Including non-PyTorch memory, this process has 11.14 GiB memory in use. Of the allocated memory 10.11 GiB is allocated by PyTorch, and 915.56 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+EXIT=1

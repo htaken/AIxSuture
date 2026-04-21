@@ -1,0 +1,165 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+2026-04-20 15:51:08,796 INFO probe_image | before build_sam3_image_model | cuda allocated=0.00 GiB reserved=0.00 GiB
+2026-04-20 15:51:12,372 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-20 15:51:12,552 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3/resolve/main/sam3.pt "HTTP/1.1 302 Found"
+2026-04-20 15:51:14,193 INFO probe_image | model built in 5.40s
+2026-04-20 15:51:14,193 INFO probe_image | after build_sam3_image_model | cuda allocated=3.33 GiB reserved=3.43 GiB
+2026-04-20 15:51:14,193 INFO probe_image | after Sam3Processor | cuda allocated=3.33 GiB reserved=3.43 GiB
+2026-04-20 15:51:14,200 INFO probe_image | before set_image frame=0 | cuda allocated=3.33 GiB reserved=3.43 GiB
+2026-04-20 15:51:14,599 INFO probe_image | set_image frame=0 elapsed=0.40s
+2026-04-20 15:51:14,599 INFO probe_image | after set_image frame=0 | cuda allocated=3.44 GiB reserved=3.81 GiB
+2026-04-20 15:51:14,938 INFO probe_image | video=A31H tag=t5 prompt='hand' n=2 max=0.973 area=0.1770 elapsed=0.16s
+2026-04-20 15:51:15,173 INFO probe_image | video=A31H tag=t5 prompt='glove' n=2 max=0.973 area=0.1774 elapsed=0.06s
+2026-04-20 15:51:15,428 INFO probe_image | video=A31H tag=t5 prompt='finger' n=5 max=0.891 area=0.1610 elapsed=0.06s
+2026-04-20 15:51:15,641 INFO probe_image | video=A31H tag=t5 prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:15,860 INFO probe_image | video=A31H tag=t5 prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.07s
+2026-04-20 15:51:16,075 INFO probe_image | video=A31H tag=t5 prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:16,309 INFO probe_image | video=A31H tag=t5 prompt='forceps' n=3 max=0.953 area=0.0235 elapsed=0.06s
+2026-04-20 15:51:16,523 INFO probe_image | video=A31H tag=t5 prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:16,760 INFO probe_image | video=A31H tag=t5 prompt='scissors' n=3 max=0.977 area=0.0237 elapsed=0.06s
+2026-04-20 15:51:16,988 INFO probe_image | video=A31H tag=t5 prompt='thread' n=2 max=0.555 area=0.0036 elapsed=0.06s
+2026-04-20 15:51:17,201 INFO probe_image | video=A31H tag=t5 prompt='suture thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:17,415 INFO probe_image | video=A31H tag=t5 prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:17,629 INFO probe_image | video=A31H tag=t5 prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:17,846 INFO probe_image | video=A31H tag=t5 prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:17,854 INFO probe_image | before set_image frame=1 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:17,865 INFO probe_image | set_image frame=1 elapsed=0.01s
+2026-04-20 15:51:17,865 INFO probe_image | after set_image frame=1 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:18,435 INFO probe_image | video=A31H tag=tend prompt='hand' n=2 max=0.945 area=0.1490 elapsed=0.37s
+2026-04-20 15:51:18,699 INFO probe_image | video=A31H tag=tend prompt='glove' n=2 max=0.973 area=0.1493 elapsed=0.06s
+2026-04-20 15:51:19,024 INFO probe_image | video=A31H tag=tend prompt='finger' n=10 max=0.914 area=0.1820 elapsed=0.06s
+2026-04-20 15:51:19,261 INFO probe_image | video=A31H tag=tend prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:19,501 INFO probe_image | video=A31H tag=tend prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:19,742 INFO probe_image | video=A31H tag=tend prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:20,011 INFO probe_image | video=A31H tag=tend prompt='forceps' n=3 max=0.961 area=0.0415 elapsed=0.06s
+2026-04-20 15:51:20,252 INFO probe_image | video=A31H tag=tend prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:20,519 INFO probe_image | video=A31H tag=tend prompt='scissors' n=3 max=0.988 area=0.0414 elapsed=0.06s
+2026-04-20 15:51:20,762 INFO probe_image | video=A31H tag=tend prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:21,007 INFO probe_image | video=A31H tag=tend prompt='suture thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:21,277 INFO probe_image | video=A31H tag=tend prompt='skin' n=4 max=0.645 area=0.1033 elapsed=0.06s
+2026-04-20 15:51:21,518 INFO probe_image | video=A31H tag=tend prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:21,760 INFO probe_image | video=A31H tag=tend prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:21,765 INFO probe_image | before set_image frame=2 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:21,776 INFO probe_image | set_image frame=2 elapsed=0.01s
+2026-04-20 15:51:21,776 INFO probe_image | after set_image frame=2 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:22,343 INFO probe_image | video=A31H tag=tmid prompt='hand' n=2 max=0.969 area=0.3234 elapsed=0.37s
+2026-04-20 15:51:22,602 INFO probe_image | video=A31H tag=tmid prompt='glove' n=2 max=0.980 area=0.3241 elapsed=0.06s
+2026-04-20 15:51:22,890 INFO probe_image | video=A31H tag=tmid prompt='finger' n=8 max=0.863 area=0.0959 elapsed=0.06s
+2026-04-20 15:51:23,115 INFO probe_image | video=A31H tag=tmid prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:23,344 INFO probe_image | video=A31H tag=tmid prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:23,573 INFO probe_image | video=A31H tag=tmid prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:23,826 INFO probe_image | video=A31H tag=tmid prompt='forceps' n=3 max=0.961 area=0.0265 elapsed=0.06s
+2026-04-20 15:51:24,053 INFO probe_image | video=A31H tag=tmid prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:24,302 INFO probe_image | video=A31H tag=tmid prompt='scissors' n=3 max=0.973 area=0.0266 elapsed=0.06s
+2026-04-20 15:51:24,530 INFO probe_image | video=A31H tag=tmid prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:24,758 INFO probe_image | video=A31H tag=tmid prompt='suture thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:24,995 INFO probe_image | video=A31H tag=tmid prompt='skin' n=1 max=0.602 area=0.0069 elapsed=0.06s
+2026-04-20 15:51:25,224 INFO probe_image | video=A31H tag=tmid prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:25,450 INFO probe_image | video=A31H tag=tmid prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:25,456 INFO probe_image | before set_image frame=3 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:25,467 INFO probe_image | set_image frame=3 elapsed=0.01s
+2026-04-20 15:51:25,467 INFO probe_image | after set_image frame=3 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:25,997 INFO probe_image | video=K78J tag=t5 prompt='hand' n=2 max=0.965 area=0.3348 elapsed=0.37s
+2026-04-20 15:51:26,230 INFO probe_image | video=K78J tag=t5 prompt='glove' n=2 max=0.977 area=0.3354 elapsed=0.06s
+2026-04-20 15:51:26,495 INFO probe_image | video=K78J tag=t5 prompt='finger' n=9 max=0.785 area=0.1152 elapsed=0.06s
+2026-04-20 15:51:26,694 INFO probe_image | video=K78J tag=t5 prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:26,898 INFO probe_image | video=K78J tag=t5 prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.07s
+2026-04-20 15:51:27,102 INFO probe_image | video=K78J tag=t5 prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:27,331 INFO probe_image | video=K78J tag=t5 prompt='forceps' n=4 max=0.496 area=0.0433 elapsed=0.06s
+2026-04-20 15:51:27,533 INFO probe_image | video=K78J tag=t5 prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:27,763 INFO probe_image | video=K78J tag=t5 prompt='scissors' n=4 max=0.777 area=0.0439 elapsed=0.06s
+2026-04-20 15:51:27,967 INFO probe_image | video=K78J tag=t5 prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:28,169 INFO probe_image | video=K78J tag=t5 prompt='suture thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:28,372 INFO probe_image | video=K78J tag=t5 prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:28,573 INFO probe_image | video=K78J tag=t5 prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:28,779 INFO probe_image | video=K78J tag=t5 prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:28,788 INFO probe_image | before set_image frame=4 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:28,798 INFO probe_image | set_image frame=4 elapsed=0.01s
+2026-04-20 15:51:28,798 INFO probe_image | after set_image frame=4 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:29,302 INFO probe_image | video=K78J tag=tend prompt='hand' n=2 max=0.957 area=0.0622 elapsed=0.37s
+2026-04-20 15:51:29,499 INFO probe_image | video=K78J tag=tend prompt='glove' n=2 max=0.961 area=0.0624 elapsed=0.06s
+2026-04-20 15:51:29,741 INFO probe_image | video=K78J tag=tend prompt='finger' n=9 max=0.902 area=0.0726 elapsed=0.06s
+2026-04-20 15:51:29,917 INFO probe_image | video=K78J tag=tend prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:30,098 INFO probe_image | video=K78J tag=tend prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:30,278 INFO probe_image | video=K78J tag=tend prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:30,481 INFO probe_image | video=K78J tag=tend prompt='forceps' n=3 max=0.965 area=0.0525 elapsed=0.06s
+2026-04-20 15:51:30,682 INFO probe_image | video=K78J tag=tend prompt='surgical forceps' n=2 max=0.332 area=0.0474 elapsed=0.06s
+2026-04-20 15:51:30,889 INFO probe_image | video=K78J tag=tend prompt='scissors' n=3 max=0.969 area=0.0530 elapsed=0.06s
+2026-04-20 15:51:31,072 INFO probe_image | video=K78J tag=tend prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:31,266 INFO probe_image | video=K78J tag=tend prompt='suture thread' n=2 max=0.652 area=0.0094 elapsed=0.06s
+2026-04-20 15:51:31,447 INFO probe_image | video=K78J tag=tend prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:31,625 INFO probe_image | video=K78J tag=tend prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:31,804 INFO probe_image | video=K78J tag=tend prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:31,809 INFO probe_image | before set_image frame=5 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:31,820 INFO probe_image | set_image frame=5 elapsed=0.01s
+2026-04-20 15:51:31,820 INFO probe_image | after set_image frame=5 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:32,306 INFO probe_image | video=K78J tag=tmid prompt='hand' n=1 max=0.719 area=0.0734 elapsed=0.37s
+2026-04-20 15:51:32,493 INFO probe_image | video=K78J tag=tmid prompt='glove' n=1 max=0.738 area=0.0721 elapsed=0.06s
+2026-04-20 15:51:32,667 INFO probe_image | video=K78J tag=tmid prompt='finger' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:32,841 INFO probe_image | video=K78J tag=tmid prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:33,017 INFO probe_image | video=K78J tag=tmid prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:33,190 INFO probe_image | video=K78J tag=tmid prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:33,385 INFO probe_image | video=K78J tag=tmid prompt='forceps' n=3 max=0.957 area=0.0413 elapsed=0.06s
+2026-04-20 15:51:33,558 INFO probe_image | video=K78J tag=tmid prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:33,761 INFO probe_image | video=K78J tag=tmid prompt='scissors' n=4 max=0.969 area=0.0682 elapsed=0.06s
+2026-04-20 15:51:33,942 INFO probe_image | video=K78J tag=tmid prompt='thread' n=1 max=0.551 area=0.0048 elapsed=0.06s
+2026-04-20 15:51:34,132 INFO probe_image | video=K78J tag=tmid prompt='suture thread' n=2 max=0.625 area=0.0064 elapsed=0.06s
+2026-04-20 15:51:34,307 INFO probe_image | video=K78J tag=tmid prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:34,483 INFO probe_image | video=K78J tag=tmid prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:34,657 INFO probe_image | video=K78J tag=tmid prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:34,666 INFO probe_image | before set_image frame=6 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:34,676 INFO probe_image | set_image frame=6 elapsed=0.01s
+2026-04-20 15:51:34,676 INFO probe_image | after set_image frame=6 | cuda allocated=3.44 GiB reserved=4.13 GiB
+2026-04-20 15:51:35,195 INFO probe_image | video=X14A tag=t5 prompt='hand' n=2 max=0.949 area=0.1953 elapsed=0.37s
+2026-04-20 15:51:35,405 INFO probe_image | video=X14A tag=t5 prompt='glove' n=2 max=0.953 area=0.1955 elapsed=0.06s
+2026-04-20 15:51:35,676 INFO probe_image | video=X14A tag=t5 prompt='finger' n=11 max=0.805 area=0.1230 elapsed=0.06s
+2026-04-20 15:51:35,861 INFO probe_image | video=X14A tag=t5 prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:36,051 INFO probe_image | video=X14A tag=t5 prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:36,243 INFO probe_image | video=X14A tag=t5 prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:36,459 INFO probe_image | video=X14A tag=t5 prompt='forceps' n=3 max=0.965 area=0.0417 elapsed=0.06s
+2026-04-20 15:51:36,648 INFO probe_image | video=X14A tag=t5 prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:36,864 INFO probe_image | video=X14A tag=t5 prompt='scissors' n=3 max=0.973 area=0.0421 elapsed=0.06s
+2026-04-20 15:51:37,055 INFO probe_image | video=X14A tag=t5 prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:37,247 INFO probe_image | video=X14A tag=t5 prompt='suture thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:37,438 INFO probe_image | video=X14A tag=t5 prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:37,627 INFO probe_image | video=X14A tag=t5 prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:37,819 INFO probe_image | video=X14A tag=t5 prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:37,828 INFO probe_image | before set_image frame=7 | cuda allocated=3.44 GiB reserved=4.31 GiB
+2026-04-20 15:51:37,841 INFO probe_image | set_image frame=7 elapsed=0.01s
+2026-04-20 15:51:37,842 INFO probe_image | after set_image frame=7 | cuda allocated=3.44 GiB reserved=4.31 GiB
+2026-04-20 15:51:38,357 INFO probe_image | video=X14A tag=tend prompt='hand' n=1 max=0.961 area=0.1217 elapsed=0.37s
+2026-04-20 15:51:38,571 INFO probe_image | video=X14A tag=tend prompt='glove' n=1 max=0.969 area=0.1219 elapsed=0.06s
+2026-04-20 15:51:38,824 INFO probe_image | video=X14A tag=tend prompt='finger' n=7 max=0.871 area=0.0792 elapsed=0.06s
+2026-04-20 15:51:39,024 INFO probe_image | video=X14A tag=tend prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:39,240 INFO probe_image | video=X14A tag=tend prompt='surgical needle' n=2 max=0.465 area=0.0052 elapsed=0.06s
+2026-04-20 15:51:39,445 INFO probe_image | video=X14A tag=tend prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:39,669 INFO probe_image | video=X14A tag=tend prompt='forceps' n=3 max=0.957 area=0.0311 elapsed=0.06s
+2026-04-20 15:51:39,872 INFO probe_image | video=X14A tag=tend prompt='surgical forceps' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:40,098 INFO probe_image | video=X14A tag=tend prompt='scissors' n=3 max=0.977 area=0.0315 elapsed=0.06s
+2026-04-20 15:51:40,299 INFO probe_image | video=X14A tag=tend prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:40,537 INFO probe_image | video=X14A tag=tend prompt='suture thread' n=5 max=0.414 area=0.0051 elapsed=0.06s
+2026-04-20 15:51:40,738 INFO probe_image | video=X14A tag=tend prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:40,941 INFO probe_image | video=X14A tag=tend prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:41,146 INFO probe_image | video=X14A tag=tend prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:41,155 INFO probe_image | before set_image frame=8 | cuda allocated=3.44 GiB reserved=4.31 GiB
+2026-04-20 15:51:41,165 INFO probe_image | set_image frame=8 elapsed=0.01s
+2026-04-20 15:51:41,165 INFO probe_image | after set_image frame=8 | cuda allocated=3.44 GiB reserved=4.31 GiB
+2026-04-20 15:51:41,685 INFO probe_image | video=X14A tag=tmid prompt='hand' n=2 max=0.953 area=0.1370 elapsed=0.38s
+2026-04-20 15:51:41,895 INFO probe_image | video=X14A tag=tmid prompt='glove' n=2 max=0.953 area=0.1373 elapsed=0.06s
+2026-04-20 15:51:42,133 INFO probe_image | video=X14A tag=tmid prompt='finger' n=6 max=0.832 area=0.1321 elapsed=0.06s
+2026-04-20 15:51:42,325 INFO probe_image | video=X14A tag=tmid prompt='needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:42,517 INFO probe_image | video=X14A tag=tmid prompt='surgical needle' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:42,715 INFO probe_image | video=X14A tag=tmid prompt='needle holder' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:42,930 INFO probe_image | video=X14A tag=tmid prompt='forceps' n=3 max=0.961 area=0.0343 elapsed=0.06s
+2026-04-20 15:51:43,147 INFO probe_image | video=X14A tag=tmid prompt='surgical forceps' n=3 max=0.416 area=0.0348 elapsed=0.06s
+2026-04-20 15:51:43,371 INFO probe_image | video=X14A tag=tmid prompt='scissors' n=4 max=0.969 area=0.0513 elapsed=0.06s
+2026-04-20 15:51:43,565 INFO probe_image | video=X14A tag=tmid prompt='thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:43,756 INFO probe_image | video=X14A tag=tmid prompt='suture thread' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:43,948 INFO probe_image | video=X14A tag=tmid prompt='skin' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:44,141 INFO probe_image | video=X14A tag=tmid prompt='tissue' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:44,335 INFO probe_image | video=X14A tag=tmid prompt='practice pad' n=0 max=0.000 area=0.0000 elapsed=0.06s
+2026-04-20 15:51:44,335 INFO probe_image | wrote ../tmp/aixsuture/probe_results/summary.csv
+2026-04-20 15:51:44,336 INFO probe_image | end | cuda allocated=3.44 GiB reserved=4.31 GiB

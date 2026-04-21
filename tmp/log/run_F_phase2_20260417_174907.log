@@ -1,0 +1,23 @@
+/home/takenouchi/AIxSuture/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/takenouchi/AIxSuture/sam3/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[0m[32mINFO 2026-04-17 17:49:14,165 128304 sam3_multiplex_base.py: 336:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+2026-04-17 17:49:14,365 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-17 17:49:14,554 INFO httpx | HTTP Request: HEAD https://huggingface.co/facebook/sam3.1/resolve/main/sam3.1_multiplex.pt "HTTP/1.1 302 Found"
+2026-04-17 17:49:16,208 INFO sam3p1_phase2 | predictor built in 7.38s
+2026-04-17 17:49:16,208 INFO sam3p1_phase2 | after build | allocated=3.65 GiB reserved=3.75 GiB
+dynamic_multimask_via_stability is reset to False in the multiplex model
+frame loading (image folder) [rank=0]:   0%|          | 0/270 [00:00<?, ?it/s][0m[32mINFO 2026-04-17 17:49:16,247 128304 sam3_base_predictor.py: 130:[0m started new session 3bbbae4d-8f12-4cab-8ca3-7db34a7e0d1a
+2026-04-17 17:49:16,247 INFO sam3p1_phase2 | session_id=3bbbae4d-8f12-4cab-8ca3-7db34a7e0d1a
+2026-04-17 17:49:16,248 INFO sam3p1_phase2 | after start_session | allocated=3.67 GiB reserved=3.77 GiB
+[0m[32mINFO 2026-04-17 17:49:16,248 128304 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+frame loading (image folder) [rank=0]:   3%|▎         | 9/270 [00:00<00:03, 85.98it/s]frame loading (image folder) [rank=0]:   7%|▋         | 18/270 [00:00<00:08, 30.24it/s]frame loading (image folder) [rank=0]:   9%|▉         | 25/270 [00:00<00:06, 38.63it/s]frame loading (image folder) [rank=0]:  11%|█▏        | 31/270 [00:01<00:09, 24.28it/s]2026-04-17 17:49:17,323 INFO sam3p1_phase2 | add_prompt text='person' frame=0 in 1.08s
+2026-04-17 17:49:17,323 INFO sam3p1_phase2 | after add_prompt | allocated=4.36 GiB reserved=5.24 GiB
+2026-04-17 17:49:17,323 INFO sam3p1_phase2 | frame 0 | obj_ids.shape=(4,) masks.shape=(4, 720, 1280) masks.dtype=bool
+2026-04-17 17:49:17,324 INFO sam3p1_phase2 | frame 0 | probs=[0.9649999737739563, 0.9610000252723694, 0.968999981880188, 0.9380000233650208]
+2026-04-17 17:49:17,324 INFO sam3p1_phase2 | frame 0 | detected=4 non-empty=4 obj_ids=[0, 1, 2, 3]
+frame loading (image folder) [rank=0]:  15%|█▌        | 41/270 [00:01<00:06, 35.87it/s]frame loading (image folder) [rank=0]:  19%|█▉        | 52/270 [00:01<00:04, 48.71it/s]2026-04-17 17:49:17,521 INFO sam3p1_phase2 | saved overlay: /home/takenouchi/AIxSuture/tmp/phase2_overlay/frame0_person.png
+[0m[32mINFO 2026-04-17 17:49:17,583 128304 sam3_base_predictor.py: 305:[0m removed session 3bbbae4d-8f12-4cab-8ca3-7db34a7e0d1a
+2026-04-17 17:49:17,583 INFO sam3p1_phase2 | close_session ok
+2026-04-17 17:49:17,583 INFO sam3p1_phase2 | Phase 2 inference test PASSED
