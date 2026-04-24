@@ -1,0 +1,42 @@
+# VCS
+.git
+.git/**
+.gitignore
+
+# Python virtual environments (aixsuture/.venv は host IDE 用・5.6GB)
+**/.venv
+**/venv
+
+# Python caches
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+
+# Session tooling / per-session regenerated files
+**/.codex
+**/AGENTS.md
+
+# Project scratch / outputs / docs
+**/tmp
+runs
+tmp
+docs
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+*.swp
+
+# Large data (should not live in repo anyway, defensive)
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.tar
+**/*.tar.gz
+**/*.zip
+**/*.pt
+**/*.pth
+**/*.ckpt
