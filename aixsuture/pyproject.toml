@@ -1,0 +1,35 @@
+[project]
+name = "aixsuture"
+version = "0.1.0"
+description = "Aachen Suturing: vision-based assessment of open suturing skills"
+readme = "README.md"
+requires-python = ">=3.8,<3.9"
+dependencies = [
+  "torch==2.4.1",
+  "torchvision==0.19.1",
+  "numpy<2",
+  "pillow",
+  "pyyaml",
+  "matplotlib",
+  "seaborn",
+  "pandas",
+  "openpyxl",
+  "tqdm",
+  "torchmetrics",
+  "tensorboard",
+  "parse",
+  "opencv-python-headless",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu118" }
+torchvision = { index = "pytorch-cu118" }
