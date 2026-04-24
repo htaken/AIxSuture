@@ -1,0 +1,6 @@
+# Runtime artifacts (bind-mounted into containers, see docker/.env.example)
+/weights/
+/runs/
+
+# Local environment file (copied from docker/.env.example)
+docker/.env

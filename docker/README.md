@@ -34,21 +34,31 @@ sudo cat /etc/docker/daemon.json
 # 3. GPU UUID 取得（.env の GPU_UUID に書き写す）
 nvidia-smi -L
 
-# 4. ホストデータディレクトリが takenouchi 所有か
-stat -c '%U %G %a %n' /mnt/ssd2/takenouchi{,/datasets,/weights,/runs}
-# 書き込み可能でない場合: sudo chown -R takenouchi:takenouchi /mnt/ssd2/takenouchi
+# 4. ホストデータディレクトリが takenouchi (UID 1002) 所有か
+stat -c '%U %G %a %n' /mnt/ssd2/takenouchi/aixsuture/datasets \
+  /home/takenouchi/AIxSuture/{weights,runs,runs/aixsuture,runs/sam3}
+# datasets: SATA 側、未作成 or root 所有の場合は sudo で作成・chown
+sudo mkdir -p /mnt/ssd2/takenouchi/aixsuture/datasets
+sudo chown -R 1002:1002 /mnt/ssd2/takenouchi/aixsuture
+# weights/runs: NVMe 側 (repo 直下), sudo 不要
+mkdir -p /home/takenouchi/AIxSuture/{weights,runs/aixsuture,runs/sam3}
 ```
 
 ### ホストディレクトリ構成（bind-mount 先）
 
 ```
-/mnt/ssd2/takenouchi/
-├── datasets/          # video, OSATS.xlsx 等（read-only マウント）
-├── weights/           # rgb_imagenet.pt 等の pretrain weights（read-only マウント）
-└── runs/              # 全サービスの実験出力先（read-write）
+/mnt/ssd2/takenouchi/aixsuture/
+└── datasets/          # video, OSATS.xlsx 等 (SATA, read-only マウント)
+
+/home/takenouchi/AIxSuture/          # このリポジトリ直下 (NVMe)
+├── weights/           # rgb_imagenet.pt 等の pretrain weights (read-only マウント)
+└── runs/              # 全サービスの実験出力先 (read-write)
     ├── aixsuture/<exp>/...
     └── sam3/<task>/...
 ```
+
+weights/ と runs/ は `.gitignore` と `.dockerignore` で除外されるため、
+repo 直下にあっても commit や build context には含まれない。
 
 ---
 

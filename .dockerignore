@@ -21,6 +21,7 @@
 # Project scratch / outputs / docs
 **/tmp
 runs
+weights
 tmp
 docs
 
