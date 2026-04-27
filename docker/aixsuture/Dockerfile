@@ -17,8 +17,7 @@ ENV UV_PROJECT_ENVIRONMENT=/opt/venv-aixsuture \
     UV_CACHE_DIR=/opt/uv-cache \
     UV_PYTHON_INSTALL_DIR=/opt/uv-python \
     UV_LINK_MODE=copy \
-    UV_NO_SYNC=1 \
-    UV_FROZEN=1
+    UV_NO_SYNC=1
 
 WORKDIR /build/aixsuture
 COPY aixsuture/pyproject.toml aixsuture/uv.lock aixsuture/.python-version ./
