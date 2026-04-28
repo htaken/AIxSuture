@@ -8,10 +8,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ENV UV_INSTALL_DIR=/usr/local/bin
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
-ARG UID=1002
-ARG GID=1002
-RUN groupadd -g ${GID} developer \
- && useradd -m -u ${UID} -g ${GID} -s /bin/bash developer
+ARG UID
+ARG GID
+RUN groupadd -g "${GID:?GID build arg required}" developer \
+ && useradd -m -u "${UID:?UID build arg required}" -g "${GID}" -s /bin/bash developer
 
 ENV UV_PROJECT_ENVIRONMENT=/opt/venv-aixsuture \
     UV_CACHE_DIR=/opt/uv-cache \

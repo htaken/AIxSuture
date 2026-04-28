@@ -8,8 +8,8 @@ services:
       context: ..
       dockerfile: docker/aixsuture/Dockerfile
       args:
-        UID: "${UID:-1002}"
-        GID: "${GID:-1002}"
+        UID: "${UID:?UID must be set in docker/.env}"
+        GID: "${GID:?GID must be set in docker/.env}"
     runtime: nvidia
     environment:
       NVIDIA_VISIBLE_DEVICES: ${GPU_UUID}
@@ -32,8 +32,8 @@ services:
       context: ..
       dockerfile: docker/sam3/Dockerfile
       args:
-        UID: "${UID:-1002}"
-        GID: "${GID:-1002}"
+        UID: "${UID:?UID must be set in docker/.env}"
+        GID: "${GID:?GID must be set in docker/.env}"
     runtime: nvidia
     environment:
       NVIDIA_VISIBLE_DEVICES: ${GPU_UUID}
